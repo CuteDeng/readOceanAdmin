@@ -1,0 +1,84 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-sitemap text-navy mid-icon"></i>
+                </div>
+                <h2>系统日志记录详情</h2>
+                <span>查看用户数据行为,查看相关行为动作详情。</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <table class="table table-hover">
+                        <thead>
+
+                        </thead>
+                        <tr>
+                            <td>用户名</td>
+                            <td>{$info.name}
+                                <if condition="$info.role eq '1'"><span
+                                        class="label label-primary">{$info.rolename}</span>
+                                    <elseif condition="$info.role eq '2'"/>
+                                    <span class="label label-success">{$info.rolename}</span>
+                                    <elseif condition="($info.role eq '3') or ($info.role eq '5')"/>
+                                    <span class="label label-info">{$info.rolename}</span>
+                                    <else/>
+                                    <span class="label label-warning">{$info.rolename}</span></if>
+                            </td>
+                        </tr>
+                        <if condition="($info.role eq '3') or ($info.role eq '5')">
+                            <tr>
+                                <td>所属学校</td>
+                                <td>{$info.schoolname}</td>
+                            </tr>
+                        </if>
+                        <tr>
+                            <td>操作时间</td>
+                            <td><?php echo date('Y-m-d H:i:s',$info['time']);?></td>
+                        </tr>
+                        <tr>
+                            <td>操作动作</td>
+                            <if condition="array_key_exists($info['a'],C('Goto.'.$info['c']))">
+                                <if condition="$info['c'] eq 'upload' ">
+                                    <!--如果有上传文件-->
+                                    <td>
+                                        <a href="<?php echo C('Goto.'.$info['c'])[$info['a']];?>{$info.tagid}"><?php echo(C($info['c'].".".$info['a']));?></a>
+                                        <a href="__ROOT__/{$info['file']}">批量上传的文件</a>
+                                    </td>
+                                    <else/>
+                                    <!--如果存在有跳转的userid-->
+                                    <td>
+                                        <a href="<?php echo C('Goto.'.$info['c'])[$info['a']];?>{$info.tagid}"><?php echo(C($info['c'].".".$info['a']));?></a>
+                                    </td>
+                                </if>
+                                <else/>
+                                <td><?php echo(C($info['c'].".".$info['a']));?></td>
+                            </if>
+
+
+                        </tr>
+                        <tr>
+                            <td>操作地点</td>
+                            <td>{$info.city}</td>
+                        </tr>
+                        <tr>
+                            <td>操作ip</td>
+                            <td>{$info.ip}</td>
+                        </tr>
+                        <tr>
+                            <td>浏览器相关详情</td>
+                            <td>{$info.agent}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

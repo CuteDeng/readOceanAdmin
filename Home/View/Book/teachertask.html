@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<style>
+    .hiden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInDown">
+
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="p-xs">
+            <div class="pull-left m-r-md">
+                <i class="fa fa-tasks text-navy mid-icon"></i>
+            </div>
+            <h2>教师任务管理</h2>
+            <span>教师任务管理,点击查看任务详情</span>
+        </div>
+    </div>
+    <!--<?php dump($studentlist);?>-->
+    <div class="ibox-content forum-container">
+        <!--<div class="ibox-nav">-->
+        <!--<ul>-->
+        <!--<li id="teacher" class="ibox-nav-item ibox-item-selected">老师</li>-->
+        <!--<li id="student" class="ibox-nav-item">学生</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+
+
+        <div id="teacherlist">
+            <div class="forum-title">
+                <div class="pull-right forum-desc">
+                    <!--<samll>总任务数： 320,800</samll>-->
+                </div>
+                <h3>老师任务板块(按照发布时间进行排序)</h3>
+            </div>
+            <empty name="teacherlist">
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <h4 class="forum-item-title">暂无教师发布任务。</h4>
+                        </div>
+                    </div>
+                </div>
+                <else/>
+                <foreach name="teacherlist" item="vo">
+
+                    <div class="forum-item <?php echo $vo['isdone']?'active':'';?>">
+                        <a href="__CONTROLLER__/taskdetail/id/{$vo.taskid}" class="forum-item-title clear-a">
+
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-9">
+                                    <div class="forum-icon">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    【{$vo.name}老师】{$vo.tasktitle}
+                                    <div class="forum-sub-title">{$vo.taskdescribe}</div>
+                                </div>
+                                <div class="col-sm-2 col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                            <?php echo subtextnodot(5,$vo['publishdate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>发布时间</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                              <?php echo subtextnodot(5,$vo['startdate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>开始时间</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2  col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                              <?php echo subtextnodot(5,$vo['enddate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>结束时间</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </foreach>
+                <div class="page-container">
+                    <div class="page">{$page}</div>
+                    <div class="clear"></div>
+                </div>
+            </empty>
+        </div>
+
+    </div>
+</div>

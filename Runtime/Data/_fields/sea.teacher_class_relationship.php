@@ -1,0 +1,1 @@
+a:6:{i:0;s:9:"teacherId";i:1;s:7:"classId";i:2;s:12:"relationship";i:3;s:8:"isMaster";s:3:"_pk";a:2:{i:0;s:9:"teacherId";i:1;s:7:"classId";}s:5:"_type";a:4:{s:9:"teacherId";s:11:"varchar(36)";s:7:"classId";s:11:"varchar(36)";s:12:"relationship";s:11:"varchar(20)";s:8:"isMaster";s:6:"int(2)";}}

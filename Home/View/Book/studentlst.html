@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<style>
+    .hiden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInDown">
+
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="p-xs">
+            <div class="pull-left m-r-md">
+                <i class="fa fa-tasks text-navy mid-icon"></i>
+            </div>
+            <h2>查看学生个性任务</h2>
+            <!--<span>查看学生个性任务</span>-->
+        </div>
+    </div>
+    <!--<?php dump($studentlist);?>-->
+    <div class="ibox-content forum-container">
+        <div id="studentlist">
+
+            <div class="forum-title">
+                <div class="pull-right forum-desc">
+
+                </div>
+                <h3>学生个人任务板块</h3>
+            </div>
+            <empty name="studentlist">
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="" class="forum-item-title">暂无学生个性订阅任务。</a>
+                        </div>
+                    </div>
+                </div>
+                <else/>
+                <foreach name="studentlist" item="vo">
+
+
+                    <div class="forum-item">
+                        <div>
+                            <div class=" feed-element ">
+                                <img alt="image" class="img-circle pull-left" src="{$vo.picurl}">
+                                <div class="media-body ">
+                                    <small class="pull-right"><?php echo subtextnodot(0,$vo['createtime'],16);?></small>
+                                    <strong>学生{$vo.name}</strong> 订阅了《{$vo.bookname}》
+                                    <if condition="$vo['assesstime']">
+                                        <br>
+                                        <small class="text-muted">
+                                            完成时间:<?php echo subtextnodot(0,$vo['assesstime'],16);?></small>
+                                        <br>
+                                        <small class="text-muted">家长评价:{$vo.assess}</small>
+                                    </if>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreach>
+                <div class="page-container">
+                    <div class="page">{$page}</div>
+                    <div class="clear"></div>
+                </div>
+            </empty>
+        </div>
+    </div>
+</div>
+</div>

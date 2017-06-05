@@ -1,0 +1,1 @@
+a:8:{i:0;s:3:"pid";i:1;s:10:"controller";i:2;s:6:"action";i:3;s:8:"fatherid";i:4;s:5:"level";i:5;s:13:"privilegename";s:3:"_pk";s:3:"pid";s:5:"_type";a:6:{s:3:"pid";s:7:"int(11)";s:10:"controller";s:11:"varchar(45)";s:6:"action";s:11:"varchar(45)";s:8:"fatherid";s:7:"int(11)";s:5:"level";s:6:"int(2)";s:13:"privilegename";s:11:"varchar(45)";}}

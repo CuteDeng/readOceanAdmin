@@ -1,0 +1,5 @@
+#禁止访问模板文件
+<Files *.html>
+Order Allow,Deny 
+Deny from all
+ </Files>

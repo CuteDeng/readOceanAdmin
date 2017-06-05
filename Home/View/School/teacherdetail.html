@@ -1,0 +1,105 @@
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/zeromodel/zeroModal.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/iCheck/custom.css" rel="stylesheet">
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa  fa-mortar-board text-navy mid-icon"></i>
+                </div>
+                <h2>教师信息</h2>
+                <span>管理教师及编辑教师信息</span>
+            </div>
+        </div>
+    </div>
+    <form action="__CONTROLLER__/editteacher/id/{$info.userid}" method="post">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>{$info.name}<span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px">{$info.schoolname}</span><span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px"><?php echo $info['type']=='user_type_student'?'学生':'老师'?></span>
+                                </h2>
+                                <div class="col-sm-9">
+                                    <div class="col-sm-12" style="min-height:100px;">
+                                        <foreach name="grade" item="vo">
+                                            <div id="{$vo.gradeid}" class="grades">
+                                                <div class="form-group">
+                                                    <foreach name="classes" item="go">
+                                                        <if condition="$vo['gradeid'] eq $go['gradeid']">
+                                                            <label style="margin-right: 10px">
+                                                                <input type="checkbox" name='class[]'
+                                                                       value="{$go['classid']}"
+                                                                <?php if(in_array($go['classid'],$klass)){echo 'checked=""';} ?>
+                                                                ><i></i>
+                                                                <?php echo getStuClass($go['classid'])?> </label>
+                                                        </if>
+                                                    </foreach>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                        </foreach>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label>身份证后六位</label>
+                                    <input class="form-control" name="idcard" type="text" value="{$info.idcard}"
+                                           required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 pull-right">
+                                <button class="btn btn-success" type="submit">确定修改</button>
+                            </div>
+                            <div class="col-sm-1 pull-right">
+                                <a href="__CONTROLLER__/reset/id/{$info.userid}/klass/{$vo.classid}">
+                                    <button class="btn btn-warning" type="button">重置密码</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="{$Think.const.ADMIN_JS_URL}plugins/zeromodel/zeroModal.min.js"></script>
+<script>
+    $('#grade').change(function () {
+//        $.ajax({
+//            url: '__CONTROLLER__/getGradeClass',
+//            type: 'post',
+//            data: {'grade': $('#grade').val()},
+//            beforeSend: function () {
+//                zeroModal.loading(6);
+//            },
+//            success: function (data) {
+//                var node = "";
+//                for (var i = 0; i < data.length; i++) {
+//                    node += "<option value=" + data[i]['classid'] + ">" + data[i]['classname'] + "</option> ";
+//                }
+//                $("#klass").empty();
+//                $('#klass').html(node);
+//                zeroModal.closeAll();
+//            },
+//            error: function () {
+//                alert("网络错误");
+//                zeroModal.closeAll();
+//            }
+//        })
+//        console.log($('#grade').val());
+    })
+    $('#klass').change(function () {
+        console.log($('#klass option:selected').val());
+    })
+</script>

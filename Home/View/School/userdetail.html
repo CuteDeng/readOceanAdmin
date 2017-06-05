@@ -1,0 +1,103 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa  fa-mortar-board text-navy mid-icon"></i>
+                </div>
+                <h2>学生信息</h2>
+                <span>管理学生及编辑学生信息</span>
+            </div>
+        </div>
+    </div>
+    <!--<?php dump($info);?>-->
+    <form action="__CONTROLLER__/editinfo/id/{$info.userid}" method="post">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>{$info.name}<span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px">{$info.schoolname}</span><span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px"><?php echo getStuClass($info['classid'])?></span><span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px"><?php echo $info['type']=='user_type_student'?'学生':'老师'?></span><span
+                                        class="btn btn-white btn-xs"
+                                        style="margin-left: 10px">{$info.sex}</span>
+                                </h2>
+                                <!--<div class="col-sm-6" id="grade1">-->
+                                <div class="col-sm-4 form-group">
+                                    <label>班级年级</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="grade" id="grade">
+                                                <foreach name="grade" item="vo">
+                                                    <option value="{$vo.gradeid}"
+                                                    <?php echo $info['gradeid']==$vo['gradeid']?'selected':''; ?>
+                                                    >{$vo.gradename}</option>
+                                                </foreach>
+                                            </select></div>
+                                        <div class="col-sm-6">
+                                            <select class="form-control col-sm-2" name="classes" id="klass">
+                                                <foreach name="class" item="vo">
+                                                    <option value="{$vo.classid}"
+                                                    <?php echo $info['classid']==$vo['classid']?'selected':''; ?>
+                                                    >{$vo.classname}</option>
+                                                </foreach>
+                                            </select></div>
+                                    </div>
+                                    <!--<input class="form-control" name="" type="text"-->
+                                    <!--value="<?php echo getStuClass($info['classid'])?>" readonly>-->
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>身份证后六位</label>
+                                    <input class="form-control" name="idcard" type="text" value="{$info.idcard}"
+                                           required>
+                                </div>
+
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 pull-right">
+                                <button class="btn btn-success" type="submit">确定修改</button>
+                            </div>
+                            <div class="col-sm-1 pull-right">
+                                <a href="__CONTROLLER__/reset/id/{$info.userid}/klass/{$vo.classid}">
+                                    <button class="btn btn-warning" type="button">重置密码</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $('#grade').change(function () {
+        $.ajax({
+            url: '__CONTROLLER__/getGradeClass',
+            type: 'post',
+            data: {'grade': $('#grade').val()},
+            success: function (data) {
+                var node = "";
+                for (var i = 0; i < data.length; i++) {
+                    node += "<option value=" + data[i]['classid'] + ">" + data[i]['classname'] + "</option> ";
+                }
+                $("#klass").empty();
+                $('#klass').html(node);
+            },
+        })
+//        console.log($('#grade').val());
+    })
+    //    $('#klass').change(function () {
+    //        console.log($('#klass option:selected').val());
+    //    })
+</script>

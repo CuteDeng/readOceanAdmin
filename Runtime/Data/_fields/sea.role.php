@@ -1,0 +1,1 @@
+a:6:{i:0;s:6:"roleId";i:1;s:8:"rolename";i:2;s:9:"privilege";i:3;s:10:"updatetime";s:3:"_pk";s:6:"roleId";s:5:"_type";a:4:{s:6:"roleId";s:6:"int(2)";s:8:"rolename";s:11:"varchar(45)";s:9:"privilege";s:8:"tinytext";s:10:"updatetime";s:11:"varchar(45)";}}

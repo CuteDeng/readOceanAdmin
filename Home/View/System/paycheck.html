@@ -1,0 +1,257 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-sitemap text-navy mid-icon"></i>
+                </div>
+                <h2>用户缴费管理</h2>
+                <span>管理系统付费用户付费情况,按照缴费日期反向排序。录入学校缴费之后,需要更新才能看到状态哦。</span>
+            </div>
+
+        </div>
+    </div>
+    <!--<div class="row">-->
+    <!--<div class="col-lg-4 col-sm-4 col-md-4"><div class="paycheck-item">1</div><div class="paycheck-item">1</div></div>-->
+    <!--</div>-->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>学校缴费情况管理</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-11"></div>
+                        <div class="col-sm-1 pull-left">
+                            <!--<div class="btn-group">-->
+                            <!--<button type="button" class="btn btn-sm btn-primary dropdown-toggle"-->
+                            <!--data-toggle="dropdown">-->
+                            <!--筛选 <span class="caret"></span>-->
+                            <!--</button>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                            <!--<li><a href="__ACTION__/type/2">只显示过期用户</a></li>-->
+                            <!--<li><a href="__ACTION__/type/3">只显示被禁用户</a></li>-->
+                            <!--<li><a href="__ACTION__/type/1">只显示激活用户</a></li>-->
+                            <!--<li class="divider"></li>-->
+                            <!--<li><a href="__ACTION__/type/0">显示全部</a></li>-->
+                            <!--</ul>-->
+                            <!--</div>-->
+
+                        </div>
+
+                    </div>
+                    <div class="margin-top"></div>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>学校</th>
+                            <th>上次缴费时间</th>
+                            <th>账单号</th>
+                            <th>状态</th>
+                            <th>管理</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--<?php  dump($schoolst);?>-->
+                        <foreach name="schoolst" item="vo">
+                            <tr>
+                                <td>{$key+1+$vo.p}</td>
+                                <td>{$vo.schoolname}</td>
+                                <td><input id="time_{$vo.schoolid}" type="date" class="form-control"
+                                           style="max-width:200px"
+                                           value="{$vo.paytime}"
+                                           disabled="disabled"></td>
+                                <td><input id="bill_{$vo.schoolid}" type="text" class="form-control"
+                                           style="max-width:200px"
+                                           value="{$vo.bill_num}"
+                                           disabled="disabled"></td>
+                                <td>
+                                    <if condition="$vo.outdate eq '1'"><span class="label label-warning">已欠费</span></if>
+                                    <if condition="$vo.status eq '1'"><span class="label label-success">正常</span>
+                                        <elseif condition="$vo.status eq '2'"/>
+                                        <span class="label label-danger">禁用</span>
+                                        <elseif condition="$vo.status eq '0'"/>
+                                        <span class="label label-info">暂无缴费记录</span></if>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary"
+                                            style="margin-right:10px" onclick="edititem('{$vo.schoolid}')">修改
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-warning"
+                                            style="margin-right:10px " onclick="saveitem('{$vo.schoolid}')">保存修改
+                                    </button>
+                                </td>
+                            </tr>
+                        </foreach>
+                    </table>
+                    <!--<div class="page-container">-->
+                    <!--<div class="page">{$page}</div>-->
+                    <!--<div class="clear"></div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>散客用户缴费情况管理</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-8"></div>
+                        <div class="col-sm-3 pull-left">
+                            <form action="__ACTION__<?php echo getRightUrl()?>" method="get">
+                                <div class="input-group">
+                                    <input type="text" placeholder="搜索阅读海洋小学学生" class="input-sm form-control"
+                                           name="username" value="{$_GET['username']}">
+                                      <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-search"></i></button> </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-1 pull-left">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    筛选 <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="__ACTION__/type/2">只显示过期用户</a></li>
+                                    <li><a href="__ACTION__/type/3">只显示被禁用户</a></li>
+                                    <li><a href="__ACTION__/type/1">只显示激活用户</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="__ACTION__/type/0">显示全部</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="margin-top"></div>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>用户名</th>
+                            <th>学校</th>
+                            <th>上次缴费时间</th>
+                            <th>微信交易流水号</th>
+                            <th>状态</th>
+                            <th>管理</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="list" item="vo">
+                            <tr>
+                                <td>{$key+1+$vo.p-9}</td>
+                                <td>{$vo.name}</td>
+                                <td>{$vo.remarks}</td>
+                                <td>{$vo.date}</td>
+                                <td>{$vo.out_trade_no}</td>
+                                <td>
+                                    <if condition="$vo.outdate eq '1'"><span class="label label-warning">过期</span></if>
+                                    <if condition="$vo.status eq '1'"><span class="label label-success">正常</span>
+                                        <elseif condition="$vo.status eq '0'"/>
+                                        <span class="label label-danger">禁用</span></if>
+                                </td>
+                                <td>
+                                    <if condition="$vo.status eq '1'"><a class="text-navy"
+                                                                         href="__CONTROLLER__/closestu/id/{$vo['userid']}<?php echo getRightUrl();?>">禁用 </a>
+                                        <else/>
+                                        <a href="__CONTROLLER__/openstu/id/{$vo['userid']}<?php echo getRightUrl();?>"
+                                           class="text-navy">激活 </a></if>
+                                </td>
+                            </tr>
+                        </foreach>
+                        <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>阅读海洋小学</td>-->
+                        <!--<td>学校用户</td>-->
+                        <!--<td>2016-12-15 19:00</td>-->
+                        <!--<td><span class="label label-success">正常</span></td>-->
+                        <!--<td><a class="text-navy" href="">管理</a></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>庞子豪</td>-->
+                        <!--<td>散客用户</td>-->
+                        <!--<td>2014-12-15 19:00</td>-->
+                        <!--<td><span class="label label-warning">欠费</span></td>-->
+                        <!--<td><a class="text-navy" href="">管理</a></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>学生甲</td>-->
+                        <!--<td>散客用户</td>-->
+                        <!--<td>2014-12-15 19:00</td>-->
+                        <!--<td><span class="label label-danger">禁用</span></td>-->
+                        <!--<td><a class="text-navy" href="">管理</a></td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    </table>
+                    <div class="page-container">
+                        <div class="page">{$page}</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    function edititem(that) {
+        var bill = $('#bill_' + that);//node节点
+        var time = $('#time_' + that);//node节点
+        bill.removeAttr('disabled');
+        time.removeAttr('disabled');
+        console.log(that);
+    }
+    function saveitem(that) {
+        var bill = $('#bill_' + that);//node节点
+        var time = $('#time_' + that);//node节点
+        if (bill[0].hasAttribute('disabled') || time[0].hasAttribute('disabled')) {
+            alert('未做任何更改');
+        } else if (time.val() != '' && bill.val() != '') {
+            $.ajax({
+                url: "__CONTROLLER__/updateschoolbill",
+                type: "post",
+                data: {'school': that, 'bill': bill.val(), 'time': time.val()},
+                success: function (data, status) {
+                    console.log(data);
+                    if (data.tag == 1) {
+                        alert('修改成功');
+                        bill.attr('disabled', 'disabled');
+                        time.attr('disabled', 'disabled');
+                    } else {
+                        alert('网络错误');
+                    }
+                },
+                error: function () {
+                    alert('网络错误');
+                }
+            });
+        } else {
+            alert('请按照规定时间格式填写');
+        }
+    }
+</script>

@@ -1,0 +1,1410 @@
+[ 2017-06-04T21:38:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016730s ]
+
+[ 2017-06-04T21:38:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-06-04T21:39:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2017-06-04T21:39:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-06-04T22:27:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017494s ]
+
+[ 2017-06-04T22:27:09+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018827s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018910s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2017-06-04T22:27:10+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+
+[ 2017-06-04T22:27:35+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-06-04T22:27:35+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-06-04T22:28:01+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-06-04T22:28:01+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-06-04T22:30:03+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2017-06-04T22:30:03+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-06-04T22:30:03+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-06-04T22:30:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+
+[ 2017-06-04T22:30:17+08:00 ] 127.0.0.1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-06-04T22:30:17+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2017-06-04T22:32:44+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0197s ]
+SQL: SHOW COLUMNS FROM `edmin` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dengxuwen' AND `pwd` = '394ebffe46bb70cea8dd52bd659f4f157216f479' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:32:44+08:00 ] 127.0.0.1 /user/code/0.4289717806814347
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-06-04T22:32:49+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:32:49+08:00 ] 127.0.0.1 /user/code/0.8415942325852422
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2017-06-04T22:32:56+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dengxuwen' AND `pwd` = '394ebffe46bb70cea8dd52bd659f4f157216f479' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:32:56+08:00 ] 127.0.0.1 /user/code/0.48993431504444207
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2017-06-04T22:33:08+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dengxuewen' AND `pwd` = '394ebffe46bb70cea8dd52bd659f4f157216f479' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:33:08+08:00 ] 127.0.0.1 /user/code/0.5600796697946019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2017-06-04T22:33:28+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dengxuewen' AND `pwd` = '394ebffe46bb70cea8dd52bd659f4f157216f479' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:33:28+08:00 ] 127.0.0.1 /user/code/0.03669762493413797
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2017-06-04T22:33:47+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:33:47+08:00 ] 127.0.0.1 /user/code/0.6495153380128957
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-06-04T22:33:56+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dengxueweng' AND `pwd` = '394ebffe46bb70cea8dd52bd659f4f157216f479' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:33:56+08:00 ] 127.0.0.1 /user/code/0.6316388115948532
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002991s ]
+
+[ 2017-06-04T22:37:14+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:37:15+08:00 ] 127.0.0.1 /user/code/0.4338747199026136
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2017-06-04T22:37:22+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'test1' AND `pwd` = '040bd08a4290267535cd247b8ba2eca129d9fe9f' LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `edmin` SET `lasttime`='1496587042',`lastip`='127.0.0.1',`marks`='c99a4e4e941638c45f02d531c9c5e58e9391a769' WHERE `usr` = 'test1' AND `pwd` = '040bd08a4290267535cd247b8ba2eca129d9fe9f' [ RunTime:0.0142s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'test1' AND `pwd` = '040bd08a4290267535cd247b8ba2eca129d9fe9f' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0100s ]
+SQL: SELECT `privilege` FROM `role` INNER JOIN edmin on edmin.role = role.roleId  WHERE `usr` = 'test1' AND `pwd` = '040bd08a4290267535cd247b8ba2eca129d9fe9f' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `privilege` [ RunTime:0.0064s ]
+SQL: select * from privilege where pid in (1,11,12,13,14,15,2,21,22,23,3,31,32,4,42,43,6,61,63,64,65) [ RunTime:0.0012s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Common\functions.php 第 1305 行.
+SQL: SHOW COLUMNS FROM `logs` [ RunTime:0.0125s ]
+SQL: INSERT INTO `logs` (`userid`,`ip`,`time`,`c`,`a`,`agent`) VALUES ('14','127.0.0.1','1496587042','user','checklogin','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0') [ RunTime:0.0028s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T22:37:23+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `edmin_feedback` [ RunTime:0.0069s ]
+SQL: SELECT edmin_feedback.feedbackId as id,`title`,`name`,`clicknum`,`responseTime` FROM `edmin_feedback` INNER JOIN edmin_feedback_answer on edmin_feedback_answer.feedbackId=edmin_feedback.feedbackId INNER JOIN system_variables on level = id  WHERE `isAnswer` = 1 ORDER BY responseTime desc,clicknum desc LIMIT 5   [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010483s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009289s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009801s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015695s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004666s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.010887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-06-04T22:37:31+08:00 ] 127.0.0.1 /System/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-06-04T22:38:21+08:00 ] 127.0.0.1 /School/school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+
+[ 2017-06-04T22:38:25+08:00 ] 127.0.0.1 /Book/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-06-04T22:39:11+08:00 ] 127.0.0.1 /School/school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-06-04T23:00:34+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SELECT edmin_feedback.feedbackId as id,`title`,`name`,`clicknum`,`responseTime` FROM `edmin_feedback` INNER JOIN edmin_feedback_answer on edmin_feedback_answer.feedbackId=edmin_feedback.feedbackId INNER JOIN system_variables on level = id  WHERE `isAnswer` = 1 ORDER BY responseTime desc,clicknum desc LIMIT 5   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008990s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007280s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003886s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.008560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-06-04T23:00:37+08:00 ] 127.0.0.1 /Post/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-06-04T23:00:47+08:00 ] 127.0.0.1 /System/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-06-04T23:03:25+08:00 ] 127.0.0.1 /System/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+
+[ 2017-06-04T23:03:30+08:00 ] 127.0.0.1 /Data/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-06-04T23:04:28+08:00 ] 127.0.0.1 /Book/booklist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `system_variables` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='suit_grade' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0346s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 34 行.
+SQL: SELECT books.name,books.id,`picUrl` FROM `books` LIMIT 0,16   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028004s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+
+[ 2017-06-04T23:05:29+08:00 ] 127.0.0.1 /Book/booklist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='suit_grade' )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 34 行.
+SQL: SELECT books.name,books.id,`picUrl` FROM `books` LIMIT 0,16   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009805s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+
+[ 2017-06-04T23:09:53+08:00 ] 127.0.0.1 /Book/booklist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='suit_grade' )  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 34 行.
+SQL: SELECT books.name,books.id,`picUrl` FROM `books` LIMIT 0,16   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012160s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+
+[ 2017-06-04T23:09:58+08:00 ] 127.0.0.1 /Book/booklist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='suit_grade' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 34 行.
+SQL: SELECT books.name,books.id,`picUrl` FROM `books` LIMIT 0,16   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009343s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+
+[ 2017-06-04T23:10:10+08:00 ] 127.0.0.1 /Book/booklist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `system_variables` WHERE ( type='suit_grade' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 34 行.
+SQL: SELECT books.name,books.id,`picUrl` FROM `books` LIMIT 0,16   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009383s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\78464a585b1b7671bceaf0e11dc5e0ae.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007759s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003361s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.009298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-06-04T23:10:19+08:00 ] 127.0.0.1 /School/grade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] Undefined index: school D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SchoolController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0119s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SchoolController.class.php 第 70 行.
+SQL: SELECT `gradeid`,`gradename`,`schoolname` FROM `grade` INNER JOIN school on school.schoolId = grade.schoolId  LIMIT 0,25   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SchoolController.class.php 第 76 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `grade` INNER JOIN school on school.schoolId = grade.schoolId  LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043933s ]
+NOTIC: [8] Undefined variable: go D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\8adbc1d21b94339a2182b4ef20a3f0c5.php 第 23 行.
+NOTIC: [8] Undefined index: schoolname D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\8adbc1d21b94339a2182b4ef20a3f0c5.php 第 31 行.
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000001 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000002 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000003 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000004 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000005 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=10000006 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030011 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030012 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030013 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030014 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030015 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44030016 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040011 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040012 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040013 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040014 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040015 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040016 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040021 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040022 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040023 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040024 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040025 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040026 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `classes` WHERE ( gradeId=44040034 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071059s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.091416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.097284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003456s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.092592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.095503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2017-06-04T23:10:23+08:00 ] 127.0.0.1 /Post/answer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `score_answer_question_answer` [ RunTime:0.0076s ]
+SQL: SELECT questionDescription as topicName,score_answer_question.questionId,`readPay`,sum(score_answer_question_answer.thumbUpNumbers) as thumbUpNumbers,count(*) as posts FROM `score_answer_question_answer` INNER JOIN score_answer_question on score_answer_question.questionId = score_answer_question_answer.questionId  WHERE ( checkState !=-1 ) GROUP BY score_answer_question_answer.questionId ORDER BY sum(score_answer_question_answer.thumbUpNumbers) desc LIMIT 0,25   [ RunTime:0.1563s ]
+SQL: SELECT `answerContent` FROM `score_answer_question_answer` WHERE ( questionId = '13ea5192-69b0-421e-b01d-13f846a84e3b' and isBestAnswer=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `answerContent` FROM `score_answer_question_answer` WHERE ( questionId = 'ab17633e-249e-40a1-b97f-3a06d3282482' and isBestAnswer=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `answerContent` FROM `score_answer_question_answer` WHERE ( questionId = '6becbd89-a147-4b09-990b-51d21585884c' and isBestAnswer=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `answerContent` FROM `score_answer_question_answer` WHERE ( questionId = 'd3e9e73e-4f39-4212-b91d-a71a47f73f0b' and isBestAnswer=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `answerContent` FROM `score_answer_question_answer` WHERE ( questionId = 'bdbdf7e5-bc8d-4a64-b250-3f11b6739f71' and isBestAnswer=1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\PostController.class.php 第 33 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `score_answer_question_answer` INNER JOIN score_answer_question on score_answer_question.questionId = score_answer_question_answer.questionId  WHERE ( checkState != -1 ) GROUP BY score_answer_question_answer.questionId LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025780s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022191s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.022663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.029976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003128s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.023916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-06-04T23:10:27+08:00 ] 127.0.0.1 /Data/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tinyread` [ RunTime:0.0094s ]
+SQL: SELECT tinyread.id,tinyread.name,`suit`,system_variables.name as type FROM `tinyread` INNER JOIN system_variables on system_variables.id = tinyread.type  ORDER BY suit LIMIT 0,25   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tinyread` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.061708s ]
+NOTIC: [8] Use of undefined constant 分类设置 - assumed '分类设置' D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\f49e309f01512e39898f22ee5dabdf82.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094550s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.095120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.103755s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007563s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.097292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.104387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2017-06-04T23:10:30+08:00 ] 127.0.0.1 /System/opinion
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 182 行.
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0093s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 192 行.
+SQL: SELECT feedback.id,feedback.userId,`name`,`content`,feedback.time,`tag` FROM `feedback` INNER JOIN  user on user.userId=feedback.userId  ORDER BY id desc LIMIT 0,25   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 200 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `feedback` INNER JOIN  user on user.userId=feedback.userId  LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.079780s ]
+NOTIC: [8] Undefined index: name D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 23 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aac3749d48de4fa1f6d6ac419a90e069.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028110s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.054405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.081657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.091070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005131s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.083939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.088154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2017-06-04T23:10:41+08:00 ] 127.0.0.1 /System/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SELECT * FROM `role` WHERE `roleId` NOT IN ('1')  [ RunTime:0.0218s ]
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 33 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 36 行.
+SQL: SELECT * FROM `edmin` INNER JOIN role on role=roleId  WHERE `roleId` NOT IN ('1') ORDER BY eid desc LIMIT 0,25   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edmin` INNER JOIN role on role=roleId  WHERE `roleId` NOT IN ('1') LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012349s ]
+NOTIC: [8] Undefined index: role D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 25 行.
+NOTIC: [8] Undefined index: role D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 26 行.
+NOTIC: [8] Undefined index: role D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 28 行.
+NOTIC: [8] Undefined index: role D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 30 行.
+NOTIC: [8] Undefined variable: vo D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 33 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 34 行.
+NOTIC: [8] Undefined index: type D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 35 行.
+NOTIC: [8] Undefined index: username D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\aa4030834d88ec8dcf4475254af84c4b.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010300s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005048s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.012058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-06-04T23:10:46+08:00 ] 127.0.0.1 /System/addusr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SELECT `roleid`,`rolename` FROM `role` WHERE `roleId` <> '1' ORDER BY roleid  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008780s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028500s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.029101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.035937s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003799s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.030415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-06-04T23:10:59+08:00 ] 127.0.0.1 /System/checkName?name=dxw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edmin` WHERE `usr` = 'dxw' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-06-04T23:11:35+08:00 ] 127.0.0.1 /System/addusers
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [8] Undefined index: school D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 87 行.
+NOTIC: [8] Undefined index: grade D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SystemController.class.php 第 88 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `edmin` WHERE `usr` = 'dxw' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `edmin` (`usr`,`name`,`pwd`,`role`,`schoolId`,`gradeId`,`enrolltime`) VALUES ('dxw','邓子','90ec49335e4535fc59490a249b878b242b5cf20c','2',NULL,NULL,'1496589094') [ RunTime:0.0011s ]
+SQL: SELECT `eid` FROM `edmin` WHERE `usr` = 'dxw' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `logs` (`userid`,`ip`,`time`,`c`,`a`,`agent`,`id`) VALUES ('14','127.0.0.1','1496589095','system','addusers','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0','23') [ RunTime:0.0010s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T23:11:59+08:00 ] 127.0.0.1 /User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: INSERT INTO `logs` (`userid`,`ip`,`time`,`c`,`a`,`agent`) VALUES ('14','127.0.0.1','1496589118','user','logout','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0') [ RunTime:0.0010s ]
+
+[ 2017-06-04T23:12:01+08:00 ] 127.0.0.1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-06-04T23:12:02+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2017-06-04T23:12:14+08:00 ] 127.0.0.1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2017-06-04T23:12:15+08:00 ] 127.0.0.1 /User/code/0.7162195258850439
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2017-06-04T23:12:26+08:00 ] 127.0.0.1 /User/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dxw' AND `pwd` = '90ec49335e4535fc59490a249b878b242b5cf20c' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `edmin` SET `lasttime`='1496589146',`lastip`='127.0.0.1',`marks`='df52b6bf2e488a565b9fa2b80e862929d5fa4c28' WHERE `usr` = 'dxw' AND `pwd` = '90ec49335e4535fc59490a249b878b242b5cf20c' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `edmin` WHERE `usr` = 'dxw' AND `pwd` = '90ec49335e4535fc59490a249b878b242b5cf20c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `privilege` FROM `role` INNER JOIN edmin on edmin.role = role.roleId  WHERE `usr` = 'dxw' AND `pwd` = '90ec49335e4535fc59490a249b878b242b5cf20c' LIMIT 1   [ RunTime:0.0004s ]
+SQL: select * from privilege where pid in (1,11,12,13,14,15,2,21,22,23,3,31,32,4,42,43,6,61,63,64,65) [ RunTime:0.0006s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Common\functions.php 第 1305 行.
+SQL: INSERT INTO `logs` (`userid`,`ip`,`time`,`c`,`a`,`agent`) VALUES ('23','127.0.0.1','1496589146','user','checklogin','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0') [ RunTime:0.0010s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Thinkphp\ThinkPHP\Library\Think\Controller.class.php 第 235 行.
+
+[ 2017-06-04T23:12:27+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SELECT edmin_feedback.feedbackId as id,`title`,`name`,`clicknum`,`responseTime` FROM `edmin_feedback` INNER JOIN edmin_feedback_answer on edmin_feedback_answer.feedbackId=edmin_feedback.feedbackId INNER JOIN system_variables on level = id  WHERE `isAnswer` = 1 ORDER BY responseTime desc,clicknum desc LIMIT 5   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008197s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004499s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.009803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2017-06-04T23:13:06+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SELECT edmin_feedback.feedbackId as id,`title`,`name`,`clicknum`,`responseTime` FROM `edmin_feedback` INNER JOIN edmin_feedback_answer on edmin_feedback_answer.feedbackId=edmin_feedback.feedbackId INNER JOIN system_variables on level = id  WHERE `isAnswer` = 1 ORDER BY responseTime desc,clicknum desc LIMIT 5   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008991s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007585s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013532s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003256s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.009250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-06-04T23:13:07+08:00 ] 127.0.0.1 /School/school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-06-04T23:30:19+08:00 ] 127.0.0.1 /School/school
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SELECT `marks` FROM `edmin` WHERE `eid` = 23 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\SchoolController.class.php 第 40 行.
+SQL: SELECT * FROM `school`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0721s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0043s ]
+SQL: SELECT * FROM `province` INNER JOIN  city on city.provinceId=province.provinceId  ORDER BY province.provinceId  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.041100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020723s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.044522s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002374s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.040398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2017-06-04T23:30:23+08:00 ] 127.0.0.1 /Book/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Component\CommonController.class.php 第 36 行.
+SQL: SELECT * FROM `system_variables` WHERE ( type='book_type' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 124 行.
+SQL: SELECT `name`,`id`,`picUrl` FROM `books` LIMIT 0,25   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `single_choice_questions` [ RunTime:0.0963s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='026a0c79-7ef0-4ee9-8957-eadc50b1300a' ) LIMIT 1   [ RunTime:0.0356s ]
+SQL: SHOW COLUMNS FROM `multiple_choice_questions` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='026a0c79-7ef0-4ee9-8957-eadc50b1300a' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `true_or_false_questions` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='026a0c79-7ef0-4ee9-8957-eadc50b1300a' ) LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='058509b4-c9e1-4da8-b2d8-a60ef0c76de8' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='058509b4-c9e1-4da8-b2d8-a60ef0c76de8' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='058509b4-c9e1-4da8-b2d8-a60ef0c76de8' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='06856e86-bdf7-4e9b-94e9-1a15b383a726' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='06856e86-bdf7-4e9b-94e9-1a15b383a726' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='06856e86-bdf7-4e9b-94e9-1a15b383a726' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='0883d609-a0b3-47be-9c29-5e36ea7397b5' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='0883d609-a0b3-47be-9c29-5e36ea7397b5' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='0883d609-a0b3-47be-9c29-5e36ea7397b5' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='09e7be8e-d6e2-4fd1-8184-239a607d499e' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='09e7be8e-d6e2-4fd1-8184-239a607d499e' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='09e7be8e-d6e2-4fd1-8184-239a607d499e' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='10df1695-e73f-4fe3-bde0-3aa3f67bc909' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='10df1695-e73f-4fe3-bde0-3aa3f67bc909' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='10df1695-e73f-4fe3-bde0-3aa3f67bc909' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='11339f97-b557-4bc2-aad1-7b0020693d89' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='11339f97-b557-4bc2-aad1-7b0020693d89' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='11339f97-b557-4bc2-aad1-7b0020693d89' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='116d7548-064b-4441-a743-a0dba383191a' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='116d7548-064b-4441-a743-a0dba383191a' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='116d7548-064b-4441-a743-a0dba383191a' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='117e8ebe-630b-45d0-bb02-cd14d3534723' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='117e8ebe-630b-45d0-bb02-cd14d3534723' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='117e8ebe-630b-45d0-bb02-cd14d3534723' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='141613c4-8c1d-4d0e-93cf-99889ef03308' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='141613c4-8c1d-4d0e-93cf-99889ef03308' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='141613c4-8c1d-4d0e-93cf-99889ef03308' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='187d4659-ba35-4f27-a8f2-c18d42ca2d6b' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='187d4659-ba35-4f27-a8f2-c18d42ca2d6b' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='187d4659-ba35-4f27-a8f2-c18d42ca2d6b' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='194fb8d6-d948-49c9-b567-7648d84d2fd0' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='194fb8d6-d948-49c9-b567-7648d84d2fd0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='194fb8d6-d948-49c9-b567-7648d84d2fd0' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='1a9d9ee8-864c-40c4-a70b-5edf903874e1' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='1a9d9ee8-864c-40c4-a70b-5edf903874e1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='1a9d9ee8-864c-40c4-a70b-5edf903874e1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='1d6fd852-0e35-4571-a238-b55843b66524' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='1d6fd852-0e35-4571-a238-b55843b66524' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='1d6fd852-0e35-4571-a238-b55843b66524' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='1db5d303-31ed-4e9c-bd32-00d41e435efc' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='1db5d303-31ed-4e9c-bd32-00d41e435efc' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='1db5d303-31ed-4e9c-bd32-00d41e435efc' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='23cb9fab-15d4-4be0-ae3b-d21196ee8d03' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='23cb9fab-15d4-4be0-ae3b-d21196ee8d03' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='23cb9fab-15d4-4be0-ae3b-d21196ee8d03' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='26fd34cc-61df-4fbc-9470-ca9e76bf72c4' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='26fd34cc-61df-4fbc-9470-ca9e76bf72c4' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='26fd34cc-61df-4fbc-9470-ca9e76bf72c4' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='28c36b1a-231c-46f1-8595-d473869e155f' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='28c36b1a-231c-46f1-8595-d473869e155f' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='28c36b1a-231c-46f1-8595-d473869e155f' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='2971d80b-84fe-48cb-a921-8ae3814d69f4' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='2971d80b-84fe-48cb-a921-8ae3814d69f4' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='2971d80b-84fe-48cb-a921-8ae3814d69f4' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='2e944155-b5d2-4e6e-bbdb-5df1fffcf25b' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='2e944155-b5d2-4e6e-bbdb-5df1fffcf25b' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='2e944155-b5d2-4e6e-bbdb-5df1fffcf25b' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='33455625-4767-4882-8657-f05a325a1496' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='33455625-4767-4882-8657-f05a325a1496' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='33455625-4767-4882-8657-f05a325a1496' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='35c3b07f-e480-4d40-99f7-65ebacb4f6da' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='35c3b07f-e480-4d40-99f7-65ebacb4f6da' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='35c3b07f-e480-4d40-99f7-65ebacb4f6da' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='364a6c66-a2ce-425c-ad78-f7ca044c4f41' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='364a6c66-a2ce-425c-ad78-f7ca044c4f41' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='364a6c66-a2ce-425c-ad78-f7ca044c4f41' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='3698c5fb-54ce-42e5-8fa4-20b38770d4ad' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='3698c5fb-54ce-42e5-8fa4-20b38770d4ad' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='3698c5fb-54ce-42e5-8fa4-20b38770d4ad' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `single_choice_questions` WHERE ( bookId='36a19423-cb2c-4b91-b516-065470f094ab' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `multiple_choice_questions` WHERE ( bookId='36a19423-cb2c-4b91-b516-065470f094ab' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `true_or_false_questions` WHERE ( bookId='36a19423-cb2c-4b91-b516-065470f094ab' ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: con D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Home\Controller\BookController.class.php 第 135 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043940s ]
+NOTIC: [8] Undefined index: bookname D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\3c94b933a12cdc971d1070bc6e6ce447.php 第 24 行.
+NOTIC: [8] Use of undefined constant addquestion - assumed 'addquestion' D:\ServerSoftware\amp\apache\htdocs\readOceanAdmin\Runtime\Cache\Home\3c94b933a12cdc971d1070bc6e6ce447.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042714s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.043112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.048745s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002882s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.043996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+

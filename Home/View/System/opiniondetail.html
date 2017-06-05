@@ -1,0 +1,115 @@
+<style>
+    .social-avatar .media-body a {
+        display: inline-block;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <a href="__CONTROLLER__/opinion<?php echo $_GET['type']?'/type/'.$_GET['type']:'';?>">
+                <div class="col-sm-11 p-xs">
+                    <div class="pull-left m-r-md">
+                         <i class="fa fa-sitemap text-navy mid-icon"></i> 
+                    </div>
+                    <h2>用户意见反馈详情</h2>
+                    <span>点击此处回到上一页</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                        <label>管理员处理: </label>
+                        <a href="__ACTION__/id/{$info.id}/action/1">
+                            <button class="btn btn-success btn-xs" type="button">已解决</button>
+                        </a>
+                        <a href="__ACTION__/id/{$info.id}/action/2">
+                            <button class="btn btn-danger btn-xs" type="button">已忽视</button>
+                        </a>
+                    </div>
+                    <div class="small m-b-xs">
+                            <h2>{$info.name}</h2> 
+                        <if condition="empty($info[contact]) neq true">
+
+                             <br/> 
+                             <span>
+                             <i class="fa fa-envelope-o"></i> {$info.contact} |
+                             </span>   
+                        <else />
+                             <br/> 
+                             <span>
+                             <i class="fa fa-envelope-o"></i> <span>用户没有填写邮箱</span> |
+                             </span> 
+                        </if>
+                        
+                        <span class="text-muted">
+                        <i class="fa fa-clock-o"></i> {$info.time} 
+                        </span>
+                        <if condition="$info.tag eq '1'">
+                            <span class="label label-success">已处理</span>
+                            <elseif condition="$info.tag eq '0'"/>
+                            <span class="label label-primary">待办</span>
+                            <elseif condition="$info.tag eq '2'"/>
+                            <span class="label label-danger">已忽略</span>
+                        </if>
+                       
+                    </div>
+                    <div class="margin-top"></div>
+                    <p>
+                        {$info.content}
+                    </p>
+                  
+
+
+                    <!--回复功能-->
+                    <if condition="$info[userid] neq '0'">
+                        <form action="__CONTROLLER__/comment/id/{$info.id}" method="post">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="comment"> <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-reply"></i> 回复 </button> </span>
+                            </div>
+                        </form>
+                     </if>
+                    <!--回复功能-->
+
+
+
+                </div>
+            </div>
+            <!--回复内容-->
+            <if condition="$info[userid] neq '0'">
+            <div class="row">    
+                <div class="col-lg-12">
+                    <h2>管理员回复:</h2>
+                    <foreach name="comment" item="vo">
+                        <div class="social-feed-box">
+                            <div class="social-avatar">
+                                <div class="media-body">
+                                    <a> {$vo.name}
+                                        <if condition="$vo.role eq '0'">
+                                            <span class="label label-success">前台用户</span>
+                                            <elseif condition="$vo.role eq '1'"/>
+                                            <span class="label label-warning">后台管理员</span>
+                                        </if>
+                                    </a><span class="pull-right"><?php echo date("Y-m-d H:i:s", $vo['time'])?></span>
+                                </div>
+                            </div>
+                            <div class="social-body">
+                                <p>
+                                    {$vo.content}
+                                </p>
+                            </div>
+                        </div>
+                    </foreach>
+                </div> 
+            </if>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

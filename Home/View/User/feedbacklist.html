@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<style>
+    .ibox-content {
+        border-style: none;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-stack-overflow text-navy mid-icon"></i>
+                    </div>
+                    <h2>系统帮助与反馈</h2>
+                    <span>阅读海洋后台管理系统的系统帮助与意见反馈专区。</span>
+                </div>
+            </div>
+
+            <div class="ibox-content forum-container">
+                <div class="row">
+                    <div class="col-sm-3 animated fadeInDown">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="file-manager">
+                                    <h2>快速帮助</h2>
+                                    <h5 class="tag-title">分类</h5>
+                                    <ul class="tag-list" style="padding: 0">
+                                        <li><a <?php if(empty($_GET['type'])){echo 'class="tag-selected"';}; ?>
+                                            href="__ACTION__/type/0">全部问题</a>
+                                        </li>
+                                        <foreach item="vo" name="type">
+                                            <li><a <?php if($vo['id']==$_GET['type']){echo 'class="tag-selected"';} ?>
+                                                href="__ACTION__/type/{$vo.id}">{$vo.name}</a>
+                                            </li>
+                                        </foreach>
+                                        <!---->
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <div class="hr-line-dashed"></div>
+                                    <a href="{:U('system/feedback')}">
+                                        <button class="btn btn-primary btn-block">发表我的问题与反馈</button>
+                                    </a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 animated fadeInDown">
+                        <div class="row">
+                            <foreach name="list" item="vo">
+                                <div class="forum-item">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <div class="forum-icon">
+                                                <if condition="$vo.isanswer eq '1'">
+                                                    <i class="fa  fa-check-square-o"></i>
+                                                    <else/>
+                                                    <i class="fa  fa-square-o"></i>
+                                                </if>
+                                            </div>
+                                            <if condition="$_SESSION['edminInfo']['role'] eq '1'">
+                                                <a href="__CONTROLLER__/editfeedback/id/{$vo.feedbackid}"
+                                                   class="forum-item-title">
+                                                    <else/>
+                                                    <a href="__CONTROLLER__/feedbackdetail/id/{$vo.feedbackid}"
+                                                       class="forum-item-title">
+                                            </if>
+                                            <if condition="$vo.level eq 'feedback_action'"><span
+                                                    class="label label-warning">{$vo.name}</span>
+                                                <elseif condition="$vo.level eq 'feedback_error'"/>
+                                                <span class="label label-danger">{$vo.name}</span>
+                                                <elseif condition="($vo.level eq 'feedback_update')"/>
+                                                <span class="label label-success">{$vo.name}</span>
+                                                <elseif condition="($vo.level eq 'feedback_forward')"/>
+                                                <span class="label label-info">{$vo.name}</span>
+                                                <else/>
+                                                <span class="label label-primary">{$vo.name}</span></if>
+                                            {$vo.title}
+                                            </a>
+
+
+                                            <div class="margin-top"></div>
+                                            <div class="forum-sub-title">
+                                                <span><i
+                                                        class="fa fa-calendar-check-o"></i> <?php echo date("Y-m-d H:i:s",$vo['time']);?></span>
+                                                <span><i class="fa fa-eye"></i> {$vo.clicknum}</span>
+                                                <span><i class="fa fa-crosshairs"></i> {$vo.awaitnum}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </foreach>
+                            <div class="page-container">
+                                <div class="page">{$page}</div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-container">
+                        <div class="page">{$page}</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

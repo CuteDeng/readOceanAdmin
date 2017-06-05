@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-question text-navy mid-icon"></i>
+                    </div>
+                    <h2>{$title.title}</h2>
+                    <span>学生用户名:<?php echo getUserName($title['studentid']);?></span><span class="pull-right">发布时间: {$title.questiontime}</span>
+                </div>
+            </div>
+            <present name="best">
+                <div class="ibox-content forum-container">
+                    <div class="forum-item active">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="forum-icon">
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                </div>
+                                <div class="forum-sub-title">
+                                    老师: <?php echo getUserName($best['teacherid']);?><span class="pull-right">{$best.answertime}</span>
+                                </div>
+                                <span class="forum-item-title">{$best.answercontent}</span>
+                            </div>
+                            <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            <?php echo (int)$best['thumbupnumbers']; ?>
+                                        </span>
+                                <div>
+                                    <small>点赞数</small>
+                                </div>
+                            </div>
+                            <a href="__CONTROLLER__/delelteanswer/id/{$vo.answerid}/question/$vo">
+                                <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            <i class="fa fa-trash"></i>
+                                        </span>
+                                    <div>
+                                        <small>删除</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </present>
+            <present name="info">
+                <div class="ibox-content forum-container">
+                    <foreach name="info" item="vo">
+                        <div class="forum-item  <?php echo empty($vo['best'])?'':'active';?>">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <div class="forum-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="forum-sub-title">
+                                        老师: <?php echo getUserName($vo['teacherid']);?><span class="pull-right">{$vo.answertime}</span>
+                                    </div>
+                                        <span
+                                                class="forum-item-title">{$vo.answercontent}</span>
+                                </div>
+                                <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            <?php echo (int)$vo['thumbupnumbers']; ?>
+                                        </span>
+                                    <div>
+                                        <small>点赞数</small>
+                                    </div>
+                                </div>
+                                <a href="__CONTROLLER__/delelteanswer/id/{$vo.answerid}/question/{$vo.questionid}">
+                                    <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            <i class="fa fa-trash"></i>
+                                        </span>
+                                        <div>
+                                            <small>删除</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </foreach>
+                    <div class="page-container">
+                        <div class="page">{$page}</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </present>
+        </div>
+    </div>
+</div>

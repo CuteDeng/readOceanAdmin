@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-book text-navy mid-icon"></i>
+                    </div>
+                    <h2>书名:{$info.name}</h2>
+                    <span>{$info.introduction}</span>
+                </div>
+            </div>
+            <!--<?php dump($list);?>-->
+            <foreach name="list" item="vo">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <h2>
+                                    {$vo.posttitle}
+                                </h2>
+                            </div>
+                            <div class="col-md-1 forum-info">
+                                <a href="__CONTROLLER__/deletecomment/id/{$vo.postid}/topic/{$vo.topicid}">
+                                    <!--<div class="col-sm-1 ">-->
+                                        <span class="views-number">
+                                            <i class="fa fa-trash"></i>
+                                        </span>
+                                    <div>
+                                        <small>删除</small>
+                                    </div>
+                                    <!--</div>-->
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!--</a>-->
+
+                        <div class="small m-b-xs">
+                            <strong>学生: <?php echo getUserName($vo['studentid']);?></strong> <span class="text-muted"><i
+                                class="fa fa-clock-o"></i> {$vo.buildtime} </span>
+                        </div>
+                        <if condition="($vo['posttype'] neq 'forum_post_huihua') AND  ($vo['posttype'] AND 'forum_post_siwei') AND ($vo['posttype'] neq 'forum_post_biji')">
+                            <p> {$vo.postcontent} </p>
+                            <else/>
+                            <img src="{$vo['fileurl']}" name="{$vo.posttitle}" width="60%">
+                        </if>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>分类:</h5>
+                                <span class="btn btn-white btn-xs"> <?php echo getTypeName($vo['posttype']);?></span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>状态：</h5>
+                                    <div>
+                                        <i class="fa fa-thumbs-o-up"> </i> <?php echo (int)$vo['thumbupnumbers']; ?>
+                                        人点赞
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </foreach>
+            <div class="page-container">
+                <div class="page">{$page}</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

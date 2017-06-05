@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css"/>
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/iCheck/custom.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/steps/jquery.steps.css" rel="stylesheet">
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-cogs text-navy mid-icon"></i>
+                </div>
+                <h2>批量导入班级学生数据</h2>
+                <span>通过导入规定格式的excel的文件导入班级学生数据</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <form id="form" action="__MODULE__/upload/classmates" class="wizard-big" method="post"
+                          enctype="multipart/form-data">
+                        <h1>示例班级学生表</h1>
+                        <fieldset>
+                            <div class="row">
+                                <!--<?php dump($type);?>-->
+                                <p>请按照 <a href="__ROOT__/Download/阅读海洋班级学生数据批量导入.xlsx">批量导入班级学生数据示例表</a>
+                                    的规定格式进行数据的填写。且本操作不可逆,请保证数据准确无误。</p>
+
+                            </div>
+                        </fieldset>
+
+                        <h1>导入班级学生表</h1>
+                        <fieldset>
+                            <h3>您将要导入到的是 {$info.name} 的学生数据,导入之后数据将不可逆,请确认无误。</h3>
+                            <input type="file" name="excelData">
+                            <input name="id" type="text" value="{:I('get.id')}" style="display: none;">
+                            <input name="schoolid" type="text" value="{$info.schoolid}" style="display: none;">
+                            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required">
+                            <label for="acceptTerms">确认为{$info.name}</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="{$Think.const.ADMIN_JS_URL}plugins/staps/jquery.steps.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/validate/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#wizard").steps();
+        $("#form").steps({
+            bodyTag: "fieldset", onStepChanging: function (event, currentIndex, newIndex) {
+                if (currentIndex > newIndex) {
+                    return true
+                }
+                if (newIndex === 3 && Number($("#age").val()) < 18) {
+                    return false
+                }
+                var form = $(this);
+                if (currentIndex < newIndex) {
+                    $(".body:eq(" + newIndex + ") label.error", form).remove();
+                    $(".body:eq(" + newIndex + ") .error", form).removeClass("error")
+                }
+                form.validate().settings.ignore = ":disabled,:hidden";
+                return form.valid()
+            }, onStepChanged: function (event, currentIndex, priorIndex) {
+                if (currentIndex === 2 && Number($("#age").val()) >= 18) {
+                    $(this).steps("next")
+                }
+                if (currentIndex === 2 && priorIndex === 3) {
+                    $(this).steps("previous")
+                }
+            }, onFinishing: function (event, currentIndex) {
+                var form = $(this);
+                form.validate().settings.ignore = ":disabled";
+                return form.valid()
+            }, onFinished: function (event, currentIndex) {
+                var form = $(this);
+                form.submit()
+            },
+        }).validate({
+            errorPlacement: function (error, element) {
+                element.before(error)
+            }, rules: {confirm: {equalTo: "#password"}}
+        })
+    });
+</script>
+<script>
+    $(function () {
+        $('#gradeNum').change(function () {
+            if ($('#gradeNum').val() > 6) {
+                alert('数量超限,请输入一个0到6之间的整数。');
+            }
+            else if ($('#gradeNum').val() <= 0) {
+                alert('数量违法,请输入一个0到6之间的整数。');
+            } else {
+                var num = $('#gradeNum').val();
+                for (var i = num - 0 + 1; i <= 6; i++) {
+                    $('#grade' + i).remove();
+                }
+            }
+
+        });
+    });
+    /* 二级联动 */
+    $(function () {
+        $('#level1').change(function () {
+            val = $(this).val();
+            $.ajax({
+                type: "GET",
+                url: '__CONTROLLER__/findCity',
+                data: {fid: val},
+                success: function (data) {
+                    if (data != false) {
+                        $('#zhanwei').next().remove();
+                        $('#zhanwei').after(data);
+                    }
+                }
+            });
+        });
+    })
+</script>
+

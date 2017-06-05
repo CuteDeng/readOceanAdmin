@@ -1,0 +1,119 @@
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/iCheck/custom.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/steps/jquery.steps.css" rel="stylesheet">
+
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-cogs text-navy mid-icon"></i>
+                </div>
+                <h2>导入单个学生数据</h2>
+                <span>导入到 <b>{$info.name}</b> </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <form id="form" action="__CONTROLLER__/addstu/id/{$_GET['id']}" class="wizard-big" method="post">
+                        <h1>学生信息</h1>
+                        <fieldset style="overflow-y: auto;overflow-x: hidden">
+                            <h3>您将要导入到的是 {$info.name} 的学生数据,导入之后数据将不可逆,请确认无误。</h3>
+                            <div class="row">
+                                <div class="col-sm-12" id="grade1">
+                                    <div class="col-sm-3 form-group">
+                                        <empty name="info">
+                                            <else/>
+                                            <label>学生所在班级</label>
+                                            <input class="form-control" type="text" value="{$info.name}" readonly>
+                                            <input class="form-control" type="text" value="{$_GET['id']}" name='id'
+                                                   style="display: none">
+                                        </empty>
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label>学生名</label>
+                                        <input class="form-control" name="username" type="text" value="" required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>身份证后六位</label>
+                                        <input class="form-control" id="idcard" name="idcard" type="text" required>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label>性别</label>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" value="1" name="sex" required> <i></i> 男 </label>
+                                        </div>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" value="2" name="sex" required> <i></i> 女 </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required">
+                            <label for="acceptTerms">确认为{$info.name}</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="{$Think.const.ADMIN_JS_URL}plugins/staps/jquery.steps.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/validate/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#wizard").steps();
+        $("#form").steps({
+            bodyTag: "fieldset", onStepChanging: function (event, currentIndex, newIndex) {
+                if (currentIndex > newIndex) {
+                    return true
+                }
+                if (newIndex === 3 && Number($("#age").val()) < 18) {
+                    return false
+                }
+                var form = $(this);
+                if (currentIndex < newIndex) {
+                    $(".body:eq(" + newIndex + ") label.error", form).remove();
+                    $(".body:eq(" + newIndex + ") .error", form).removeClass("error")
+                }
+                form.validate().settings.ignore = ":disabled,:hidden";
+                return form.valid()
+            }, onStepChanged: function (event, currentIndex, priorIndex) {
+                if (currentIndex === 2 && Number($("#age").val()) >= 18) {
+                    $(this).steps("next")
+                }
+                if (currentIndex === 2 && priorIndex === 3) {
+                    $(this).steps("previous")
+                }
+            }, onFinishing: function (event, currentIndex) {
+                var form = $(this);
+                form.validate().settings.ignore = ":disabled";
+                return form.valid()
+            }, onFinished: function (event, currentIndex) {
+                var form = $(this);
+                //提交判断
+                if ($('#idcard')[0].value.length == 6) {
+                    form.submit()
+                }
+                else {
+                    alert("身份证长度有误");
+                }
+            },
+        }).validate({
+            errorPlacement: function (error, element) {
+                element.before(error)
+            }, rules: {confirm: {equalTo: "#password"}}
+        });
+    });
+</script>
+
+

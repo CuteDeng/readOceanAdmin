@@ -1,0 +1,84 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-cogs text-navy mid-icon"></i>
+                </div>
+                <h2>班级管理</h2>
+                <span>导入班级学生数据</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="row">
+
+                        <if condition="$_SESSION['edminInfo']['role'] eq 3">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="tag-list">
+                                    <li><a <?php if(empty($_GET['gid'])){echo 'class="tag-selected"';}; ?>
+                                        href="__ACTION__/gid/0">全部</a>
+                                    </li>
+                                    <foreach name="grade" item="go">
+                                        <li><a <?php if($go['gradeid']==$_GET['gid']){echo 'class="tag-selected"';} ?>
+                                            href="__ACTION__/gid/{$go.gradeid}">{$go.gradename}</a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                            </div>
+
+                        </if>
+                        <if condition="($_SESSION['edminInfo']['role'] neq '3') and ($_SESSION['edminInfo']['role'] neq '5')">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-5 pull-right">
+                                <form action="__ACTION__" method="get">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="搜索学校全称" class="input-sm form-control"
+                                               name="school"
+                                               value="{$_GET['school']}">
+                                      <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-search"></i></button> </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </if>
+
+                    </div>
+                    <div class="margin-top"></div>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>学校名称</th>
+                            <th>班级</th>
+                            <th>人数</th>
+                            <th>管理</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="list" item="vo">
+                            <tr>
+                                <td>{$key+1+$vo.p}</td>
+                                <td>{$vo.schoolname}</td>
+                                <td><?php echo getStuClass($vo['classid'])?></td>
+                                <td><?php echo getClassMates($vo['classid'])?></td>
+                                <td><a class="text-navy" target="_blank" href="__CONTROLLER__/classmate/id/{$vo.classid}">管理</a></td>
+                            </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                    <div class="page-container">
+                        <div class="page">{$page}</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

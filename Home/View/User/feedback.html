@@ -1,0 +1,98 @@
+<link href="{$Think.const.ADMIN_EDITOR_URL}styles/simditor.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}newstyle.css" rel="stylesheet">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-stack-overflow text-navy mid-icon"></i>
+                    </div>
+                    <h2>后台管理系统意见建议反馈</h2>
+                    <span>这里是后台管理系统的吐槽区,点击上传图片时,偶发性反应迟钝。敬请见谅。</span>
+                </div>
+            </div>
+            <form action="__ACTION__" method="post">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label>标题</label>
+                                        <input type="text" class="form-control" required name="title">
+                                    </div>
+                                    <div>
+                                        <div class="form-group col-lg-4">
+                                            <label>意见反馈类型</label>
+                                            <select class="form-control col-lg-6" id="level" name="tags" required>
+                                                <option value="">请选择</option>
+                                                <foreach name="level" item="vo">
+                                                    <option value="{$vo.id}">{$vo.name}</option>
+                                                </foreach>
+                                            </select>
+                                            <span id="level-tips">点击左边下拉框选择反馈类型吧。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top">
+                                    <textarea id="editor" placeholder=" 欢迎提出您在使用过程中遇到的问题或宝贵意见，感谢您对阅读海洋管理后台的支持。"
+                                              autofocus required name="content"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="pull-right col-lg-2">
+                                        <button class="btn btn-primary margin-top">确认提交</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+        <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/module.js"></script>
+        <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/uploader.js"></script>
+        <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/simditor.js"></script>
+        <script>
+            $(function () {
+                $('#level').change(function () {
+                    switch ($(this).val()) {
+                        case 'feedback_action':
+                            tips = '是我们哪里做的不好,让你有疑问?';
+                            break;
+                        case 'feedback_error':
+                            tips = '你说我做错了什么,我们改还不行么?';
+                            break;
+                        case 'feedback_forward':
+                            tips = '看来你对我们的网站有期待哟。';
+                            break;
+                        case 'feedback_update':
+                            tips = '看来你对我们的网站有期待哟。';
+                            break;
+                        case 'feedback_good':
+                            tips = '我也想你夸夸我。';
+                            break;
+                        default:
+                            tips = '点击左边下拉框选择反馈类型吧。';
+                            break;
+                    }
+                    $("#level-tips").html(tips);
+                })
+            });
+            var editor = new Simditor({
+                textarea: $('#editor'),
+                toolbar: toolbar,  //工具栏
+                upload: {
+                    url: '{:U("upload/Imgupload")}', //文件上传的接口地址
+                    params: null, //键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+                    fileKey: 'upload', //服务器端获取文件数据的参数名
+                    connectionCount: 3,
+                    leaveConfirm: '正在上传文件'
+                }
+            });
+
+        </script>

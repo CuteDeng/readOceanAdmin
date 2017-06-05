@@ -1,0 +1,114 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-cogs text-navy mid-icon"></i>
+                </div>
+                <h2>{$title.title}管理</h2>
+                <span>{$title.subtitle}</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-8"></div>
+                        <form action="__SELF__">
+                            <div class="col-sm-3 pull-left">
+                                <div class="input-group">
+                                    <input type="text" name="bookname" placeholder="搜索书本" class="input-sm form-control"
+                                           value="{$_GET['bookname']}">
+                                      <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-search"></i></button> </span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-sm-1">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    筛选 <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <foreach name="type" item="to">
+                                        <li><a href="__ACTION__/type/{$to.id}">{$to.name}</a></li>
+                                    </foreach>
+                                    <li class="divider"></li>
+                                    <li><a href="__ACTION__/type/0">显示全部</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="margin-top"></div>
+                    <div style="min-height: 450px;">
+                        <if condition="$title['url'] eq addquestion">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>书本名</th>
+                                    <th>判断题数</th>
+                                    <th>单选题数</th>
+                                    <th>多选题数</th>
+                                    <th>导入</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <foreach name="list" item="vo">
+                                    <tr>
+                                        <td>{$key+1+$vo.p}</td>
+                                        <td>{$vo.name}</td>
+                                        <td>{$vo.judge}</td>
+                                        <td>{$vo.single}</td>
+                                        <td>{$vo.multiple}</td>
+                                        <td>
+                                            <!--<a class="text-navy" href="__CONTROLLER__/{$title.url}/id/{$vo.id}">编辑</a> |-->
+                                            <a class="text-navy"
+                                               href="__CONTROLLER__/{$title.url}/id/{$vo.id}">批量导入题库</a>
+                                        </td>
+                                    </tr>
+                                </foreach>
+
+                                </tbody>
+                            </table>
+                            <else/>
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>书本名</th>
+                                    <th>查看任务</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <foreach name="list" item="vo">
+                                    <tr>
+                                        <td>{$key+1+$vo.p}</td>
+                                        <td>{$vo.name}</td>
+                                        <td><a class="text-navy" href="__CONTROLLER__/{$title.url}/id/{$vo.id}">编辑</a>
+                                        </td>
+                                    </tr>
+                                </foreach>
+
+                                </tbody>
+                            </table>
+
+                        </if>
+
+                        <div class="page-container">
+                            <div class="page">{$page}</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

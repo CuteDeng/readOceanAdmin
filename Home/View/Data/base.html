@@ -1,0 +1,272 @@
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-sliders text-navy mid-icon"></i>
+                </div>
+                <h2>{$title.title}管理</h2>
+                <span>{$title.subtitle}</span>
+            </div>
+
+        </div>
+    </div>
+    <if condition="$title['title'] neq '积分等级'">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <if condition="$title['title'] neq 分类设置">
+                                    <a href="{:U('data/add'.$title['type'])}">
+                                        <button type="button" class="btn btn-sm btn-primary">添加{$title.title}</button>
+                                    </a>
+                                </if>
+                            </div>
+                            <div class="col-sm-8"></div>
+                            <form action="__SELF__">
+                            <div class="col-sm-3 pull-left">
+                                <div class="input-group">
+                                    <input type="text" placeholder="搜索" name="name" class="input-sm form-control">
+                                      <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-search"></i></button> </span>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="margin-top"></div>
+
+                        <table class="table table-hover">
+                            <thead>
+                            <if condition="$title['title'] eq '海洋生物'">
+                                <tr>
+                                    <th>序号</th>
+                                    <th>海洋生物名称</th>
+                                    <th>分类</th>
+                                    <th>兑换等级</th>
+                                    <th>兑换积分</th>
+                                    <th>编辑</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="list" item="vo">
+                                <tr>
+                                    <td>{$key+1+$vo.p}</td>
+                                    <td>{$vo.name}</td>
+                                    <td>{$vo.type}</td>
+                                    <td>{$vo.requiredlevel}</td>
+                                    <td>{$vo.requiredscore}</td>
+                                    <td><a class="text-navy" href="">编辑</a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                            <elseif condition="$title['title'] eq '微课资源'"/>
+                            <tr>
+                                <th>序号</th>
+                                <th>微课课程</th>
+                                <th>课程分类</th>
+                                <th>推荐阅读阶段</th>
+                                <th>编辑</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="list" item="vo">
+                                <tr>
+                                    <td>{$key+1+$vo.p}</td>
+                                    <td>{$vo.name}</td>
+                                    <td>{$vo.type}</td>
+                                    <td>{$vo.suit}年级</td>
+                                    <td><a class="text-navy" href="__CONTROLLER__/editvideo/id/{$vo.id}">编辑</a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                            <elseif condition="$title['title'] eq '积分等级'"/>
+                            <tr>
+                                <th>序号</th>
+                                <th>等级称号</th>
+                                <th>升级所需积分阈值</th>
+                                <th>人数</th>
+                                <th>编辑</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="list" item="vo">
+                                <tr>
+                                    <td>{$key+1+$vo.p}</td>
+                                    <td>{$vo.schoolname}</td>
+                                    <td>{$vo.schoolid}</td>
+                                    <td>{$vo.city}</td>
+                                    <td><a class="text-navy" href="">编辑</a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                            <elseif condition="$title['title'] eq '分类设置'"/>
+                            <tr>
+                                <th>序号</th>
+                                <th>分类</th>
+                                <th>二级分类</th>
+                                <th>编辑</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="list" item="vo">
+                                <tr>
+                                    <td>{$key+1+$vo.p}</td>
+                                    <td>{$vo.schoolname}</td>
+                                    <td>{$vo.schoolid}</td>
+                                    <td>{$vo.city}</td>
+                                    <td><a class="text-navy" href="">编辑</a></td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+    </if>
+
+    </table>
+    <div class="page-container">
+        <div class="page">{$page}</div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<else/>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>等级阈值管理</h5>
+                <div class="ibox-tools">
+
+                    <!--<a href="{:U('index/index')}">-->
+                    <!--<i class="fa fa-wrench"></i>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu dropdown-user">-->
+                    <!--<li><a href="table_basic.html#">设置</a>-->
+                    <!--</li>-->
+                    <!--<li><a href="table_basic.html#">选项2</a>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>等级</th>
+                        <th>等级称号</th>
+                        <th>该等级用户数</th>
+                        <th>所需书本阅读数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="list" item="vo">
+                        <tr>
+                            <td>{$vo.rank}</td>
+                            <td><input id="text_{$vo.rank}" type="text" class="form-control" style="max-width:200px"
+                                       value="{$vo.label}"
+                                       disabled="disabled"></td>
+                            <td>{$vo.count}</td>
+                            <td><input id="score_{$vo.rank}" type="text" class="form-control" style="max-width:200px"
+                                       value="{$vo.required}"
+                                       disabled="disabled"></td>
+                            <!--<td><a class="text-navy" href="__CONTROLLER__/editgrade/id/{$vo.rank}">编辑</a></td>-->
+                            <td>
+                                <button type="button" class="btn btn-sm btn-warning pull-right"
+                                        style="margin-right:10px " onclick="saveitem({$vo.rank})">保存修改
+                                </button>
+                                <button type="button" class="btn btn-sm btn-primary pull-right"
+                                        style="margin-right:10px" onclick="edititem({$vo.rank})">修改
+                                </button>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>最高分排行榜</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>用户名</th>
+                        <th>所属学校</th>
+                        <th>积分</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="data" item="so">
+                        <tr>
+                            <td>第 {$key+1} 名</td>
+                            <td>{$so.name}</td>
+                            <td>{$so.schoolname}</td>
+                            <td>{$so.totalintegral}</td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</if>
+
+</div>
+<script>
+
+    function edititem(that) {
+        var text = $('#text_' + that);//node节点
+        var score = $('#score_' + that);//node节点
+        text.removeAttr('disabled');
+        score.removeAttr('disabled');
+    }
+    function saveitem(that) {
+        var text = $('#text_' + that);//node节点
+        var score = $('#score_' + that);//node节点
+        if (text[0].hasAttribute('disabled') || score[0].hasAttribute('disabled')) {
+            alert('未做任何更改');
+        } else {
+            $.ajax({
+                url: "__CONTROLLER__/editscoregrade",
+                type: "post",
+                data: {'label': text.val(), 'score': score.val(), 'rank': that},
+                success: function (data, status) {
+                    console.log(data);
+                    if (data.tag == 1) {
+                        alert('修改成功');
+                        text.attr('disabled', 'disabled');
+                        score.attr('disabled', 'disabled');
+                    } else {
+                        alert('网络错误');
+                    }
+                },
+                error: function () {
+                    alert('网络错误');
+                }
+            })
+        }
+    }
+</script>

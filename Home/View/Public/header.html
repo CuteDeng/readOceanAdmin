@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>阅读海洋后台管理系统</title>
+    <meta name="keywords" content="阅读海洋,阅读海洋后台管理系统">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <link href="{$Think.const.ADMIN_CSS_URL}bootstrap.min.css" rel="stylesheet">
+    <link href="{$Think.const.ADMIN_CSS_URL}font-awesome.min.css" rel="stylesheet">
+    <link href="{$Think.const.ADMIN_CSS_URL}animate.min.css" rel="stylesheet">
+    <link href="{$Think.const.ADMIN_CSS_URL}style.min862f.css" rel="stylesheet">
+    <link href="{$Think.const.ADMIN_CSS_URL}page.css" rel="stylesheet">
+    <script src="{$Think.const.ADMIN_JS_URL}jquery.min.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}content.index.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}plugins/zeromodel/zeroModal.min.js"></script>
+    <style>
+        .margin-top {
+            margin-top: 10px;
+        }
+
+        .tag-selected {
+            background: #1ab394 !important;
+            color: white !important;
+        }
+
+        .overy {
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body class="gray-bg top-navigation" style="min-height: 450px;">
+
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom white-bg">
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+                            class="navbar-toggle collapsed" style="background-color:#1ab394" type="button">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <a href="{:U('Index/index')}" class="navbar-brand">阅读海洋</a>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <foreach name="_SESSION['edminInfo']['privilege']" item="v1" key="k1">
+                            <if condition="$v1.level eq 1">
+                                <li class="dropdown">
+                                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                       data-toggle="dropdown">{$v1.privilegename} <span class="caret"></span></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <foreach name="_SESSION['edminInfo']['privilege']" item="v2" key="k2">
+                                            <if condition="$v2['fatherid'] eq $v1['pid']">
+                                                <li>
+                                                    <a href="__MODULE__/{$v2.controller}/{$v2.action}">{$v2.privilegename}</a>
+                                                </li>
+                                            </if>
+                                        </foreach>
+                                    </ul>
+                                </li>
+                            </if>
+                        </foreach>
+                        <!--<li class="dropdown">-->
+                        <!--<a aria-expanded="false" role="button" href="#" class="dropdown-toggle"-->
+                        <!--data-toggle="dropdown"> 书籍管理 <span class="caret"></span></a>-->
+                        <!--<ul role="menu" class="dropdown-menu">-->
+                        <!--<li><a href="{:U('Book/booklist')}">书籍信息管理</a>-->
+                        <!--</li>-->
+                        <!--<li><a href="{:U('Book/test')}">书籍题库管理</a>-->
+                        <!--</li>-->
+                        <!--<li><a href="{:U('Book/tasks')}">书籍任务管理</a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <!--<a href="{:U('User/userinfo')}">-->
+                        <!--<i class="fa fa-cogs"></i> 修改信息-->
+                        <!--</a>-->
+
+                    </ul>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                               data-toggle="dropdown">{$_SESSION['edminInfo']['username']} <span
+                                    class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+                                    <a href="{:U('System/edituserinfo')}">
+                                        <i class="fa fa-cogs"></i> 修改信息
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{:U('System/newlist')}">
+                                        <i class="fa fa-rss"></i> 系统公告
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{:U('System/feedbacklist')}">
+                                        <i class="fa fa-stack-overflow"></i> 帮助与反馈
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        |
+                        <li>
+                            <a href="{:U('User/logout')}">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>

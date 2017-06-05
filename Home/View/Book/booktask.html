@@ -1,0 +1,178 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<style>
+    .hiden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInDown">
+
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="p-xs">
+            <div class="pull-left m-r-md">
+                <i class="fa fa-tasks text-navy mid-icon"></i>
+            </div>
+            <h2>{$title.title}管理</h2>
+            <span>{$title.subtitle}</span>
+        </div>
+    </div>
+    <div class="ibox-content forum-container">
+        <div class="ibox-nav">
+            <ul>
+                <li id="teacher" class="ibox-nav-item ibox-item-selected">老师</li>
+                <li id="student" class="ibox-nav-item">学生</li>
+            </ul>
+        </div>
+
+
+        <div id="teacherlist">
+            <div class="forum-title">
+                <div class="pull-right forum-desc">
+                    <!--<samll>总任务数： 320,800</samll>-->
+                </div>
+                <h3>活动中老师个人任务板块</h3>
+            </div>
+            <empty name="teacherlist">
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="__CONTROLLER__/teachertask" class="forum-item-title">暂无活动中任务,点击查看更多教师任务。</a>
+                        </div>
+                    </div>
+                </div>
+                <else/>
+                <foreach name="teacherlist" item="vo">
+
+                    <div class="forum-item active">
+                        <a href="__CONTROLLER__/taskdetail/id/{$vo.taskid}" class="forum-item-title clear-a">
+
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-9">
+                                    <div class="forum-icon">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    【{$vo.name}老师】{$vo.tasktitle}
+                                    <div class="forum-sub-title">{$vo.taskdescribe}</div>
+                                </div>
+                                <div class="col-sm-2 col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                            <?php echo subtextnodot(5,$vo['publishdate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>发布时间</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                              <?php echo subtextnodot(5,$vo['startdate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>开始时间</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2  col-lg-1 forum-info">
+                                        <span class="views-number font-small">
+                                              <?php echo subtextnodot(5,$vo['enddate'],5);?>
+                                        </span>
+                                    <div>
+                                        <small>结束时间</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </foreach>
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="__CONTROLLER__/teachertask" class="forum-item-title">点击查看更多教师任务。</a>
+                        </div>
+                    </div>
+                </div>
+            </empty>
+        </div>
+        <div id="studentlist" class="hiden">
+
+            <div class="forum-title">
+                <div class="pull-right forum-desc">
+                    <!--<samll>总任务数： 320,800</samll>-->
+                </div>
+                <h3>活动中学生个人任务板块</h3>
+            </div>
+            <empty name="studentlist">
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="__CONTROLLER__/studentlst" class="forum-item-title">暂无活动中任务,点击查看更多学生任务。</a>
+                        </div>
+                    </div>
+                </div>
+                <else/>
+                <foreach name="studentlist" item="vo">
+
+
+                    <div class="forum-item">
+                        <div>
+                            <div class=" feed-element ">
+                                <img alt="image" class="img-circle pull-left" src="{$vo.picurl}">
+                                <div class="media-body ">
+                                    <small class="pull-right"><?php echo subtextnodot(0,$vo['createtime'],16);?></small>
+                                    <strong>学生{$vo.name}</strong> 订阅了《{$vo.bookname}》
+                                    <if condition="$vo['assesstime']">
+                                        <br>
+                                        <small class="text-muted">
+                                            完成时间:<?php echo subtextnodot(0,$vo['assesstime'],16);?></small>
+                                        <br>
+                                        <small class="text-muted">家长评价:{$vo.assess}</small>
+                                    </if>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreach>
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="__CONTROLLER__/studentlst" class="forum-item-title">点击查看更多学生任务。</a>
+                        </div>
+                    </div>
+                </div>
+            </empty>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#studentlist').addClass('hiden');
+        $('#teacher').click(function () {
+            $('#student').removeClass('ibox-item-selected');
+            $('#teacher').addClass('ibox-item-selected');
+            $('#teacherlist').removeClass('hiden').addClass('show');
+            $('#studentlist').removeClass('show').addClass('hiden');
+        });
+        $('#student').click(function () {
+            $('#teacher').removeClass('ibox-item-selected');
+            $('#student').addClass('ibox-item-selected');
+            $('#studentlist').removeClass('hiden').addClass('show');
+            $('#teacherlist').removeClass('show').addClass('hiden');
+        })
+    });
+</script>

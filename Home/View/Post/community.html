@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-globe text-navy mid-icon"></i>
+                    </div>
+                    <h2>海洋社区管理</h2>
+                    <span>统计海洋社区的帖子情况,默认为按照帖子数进行排序。</span>
+                </div>
+            </div>
+            <div class="ibox-content forum-container">
+
+                <div class="forum-title" style="overflow: hidden">
+
+                    <div class="pull-right forum-desc col-lg-3 col-md-3 col-sm-3">
+                        <form action="__ACTION__">
+                            <div class="pull-left">
+                                <div class="input-group">
+                                    <input type="text" placeholder="搜索书籍社区" class="input-sm form-control"
+                                           name="bookname" value="{$_GET['bookname']}">
+                                        <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i
+                                                class="fa fa-search"></i></button> </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <foreach name="list" item="vo">
+                    <div class="forum-item">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="forum-icon">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                                <a href="__CONTROLLER__/communication/id/{$vo.topicid}" class="forum-item-title">{$vo.topicname}</a>
+                                <div class="forum-sub-title"> {$vo.remark}</div>
+                            </div>
+                            <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            {$vo.posts}
+                                        </span>
+                                <div>
+                                    <small>帖子</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 forum-info">
+                                        <span class="views-number">
+                                            <?php echo $vo['like']?$vo['like']:'0'; ?>
+                                        </span>
+                                <div>
+                                    <small>点赞数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreach>
+                <div class="page-container">
+                    <div class="page">{$page}</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<link href="{$Think.const.ADMIN_CSS_URL}newstyle.css" rel="stylesheet">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-stack-overflow text-navy mid-icon"></i>
+                    </div>
+                    <h2>阅读海洋管理后台系统公告</h2>
+                    <span>阅读海洋后台管理系统系统公告服务专区。</span>
+                </div>
+            </div>
+
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+
+                    </div>
+                    <div class="text-center article-title">
+                        <h1>
+                            {$info.title}
+                        </h1>
+                        <div class="forum-sub-title">
+                            <span class="label label-primary">{$info.name}</span>
+                            <if condition="($info.level eq '1')">
+                                <span class="label label-info">重要</span>
+                                <elseif condition="($info.level eq '2')"/>
+                                <span class="label label-warning">紧急</span>
+                                <elseif condition="($info.level eq '3')"/>
+                                <span class="label label-danger">置顶!</span>
+                            </if>
+                            <span><i
+                                    class="fa fa-calendar-check-o"></i> <?php echo date("Y-m-d H:i:s",$info['time']);?></span>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="text-center article">
+                        {$info.content}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+         
+        <script> $(document).ready(function () {
+            if ($.cookie('clickNum')) {
+                $('#month').html($.cookie('task_month') + '月');
+                $('#newnum').html($.cookie('task_this') ? $.cookie('task_this') : '0');
+                $('#taskrate').html((Math.round(($.cookie('task_this') / $.cookie('task_totalnum')) * 100) + "% <i class='fa fa-level-up'></i>"));
+            } else {
+                $.ajax({
+                    url: '__CONTROLLER__/addClickNum/id/{$info.feedbackId}', type: 'post', success: function (data) {
+                        var month = new Date();
+                        month.setDate(1);
+                        month.setMonth(month.getMonth() + 1);
+                        month.setHours(0);
+                        month.setMinutes(0);
+                        $.cookie('task_month', data.month, {expires: month});
+                        $.cookie('task_this', data.add, {expires: month});
+                        $.cookie('task_totalnum', data.total, {expires: month});
+                        $('#month').html($.cookie('task_month') + '月');
+                        $('#newnum').html($.cookie('task_this') ? $.cookie('task_this') : '0');
+                        $('#taskrate').html((Math.round(($.cookie('task_this') / $.cookie('task_totalnum')) * 100) + "%"));
+                    },
+                });
+            }
+        }); </script>

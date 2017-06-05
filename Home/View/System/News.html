@@ -1,0 +1,163 @@
+<link href="{$Think.const.ADMIN_EDITOR_URL}styles/simditor.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}newstyle.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/chosen/chosen.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/iCheck/custom.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/datapicker/datepicker3.css" rel="stylesheet">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInDown">
+            <div class="ibox-content m-b-sm border-bottom">
+                <div class="p-xs">
+                    <div class="pull-left m-r-md">
+                        <i class="fa fa-stack-overflow text-navy mid-icon"></i>
+                    </div>
+                    <h2>{$title.title}</h2>
+                    <span>{$title.subtitle}</span>
+                </div>
+            </div>
+            <form action="__CONTROLLER__/savenew" method="post">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label>标题</label>
+                                        <input type="text" class="hidden" value="{$info.newid}" name="id">
+                                        <input type="text" class="form-control" required name="title"
+                                               value="{$info.title}">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>推送类型</label>
+                                        <span class="text-navy">选择推送类型</span>
+                                        <select class="form-control" id="level" name="tags" required>
+                                            <option value="">请选择</option>
+                                            <foreach name="tag" item="vo">
+                                                <option value="{$vo.id}"
+                                                <?php echo $info['tag']==$vo['id']?'selected':'';?> >{$vo.name}</option>
+                                            </foreach>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>优先等级</label>
+                                        <span class="text-navy">选择推送类型</span>
+                                        <select class="form-control" name="level" required>
+                                            <option value="">请选择</option>
+                                            <option value="3"
+                                            <?php echo $info['level']==3?'selected':'';?>>置顶</option>
+                                            <option value="2"
+                                            <?php echo $info['level']==2?'selected':'';?>>紧急</option>
+                                            <option value="1"
+                                            <?php echo $info['level']==1?'selected':'';?>>重要</option>
+                                            <option value="0"
+                                            <?php echo $info['level']==0?'selected':'';?>>日常</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-3">
+                                        <label>开始时间</label><span class="text-navy"> 不填,则代表立即发布。</span>
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control" name="starttime"
+                                                   value='<?php echo $info["time"]?date("Y-m-d",$info["time"]):"";?>'>
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>结束时间</label><span class="text-navy"> 不填,则代表永久保留。</span>
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control" name="endtime"
+                                                   value='<?php echo $info["endtime"]?date("Y-m-d",$info["endtime"]):"";?>'>
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="font-noraml">选择学校</label>
+                                        <span class="text-navy">此为必选项~没有选择无法提交。</span>
+                                        <div class="input-group">
+                                            <select data-placeholder="选择学校" id="school" name="school[]"
+                                                    class="chosen-select" multiple
+                                                    style="width:250%" tabindex="4" required>
+                                                <option value="1" hassubinfo="true"
+                                                <?php if($info['school']===0){echo 'selected';}?>>全选</option>
+                                                <foreach name="list" item="vo">
+                                                    <option value="{$vo.schoolid}" hassubinfo="true"
+                                                    <?php  if(in_array($vo['schoolid'],$info['school'])){echo 'selected';}?>
+                                                    >{$vo.schoolname}
+                                                    </option>
+                                                </foreach>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top">
+                                    <textarea id="editor" placeholder="公告内容"
+                                              autofocus required name="content">{$info['content']}</textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="pull-right col-lg-2">
+                                        <button type="submit" class="btn btn-primary margin-top">确认提交</button>
+                                    </div>
+                                    <div class="form-group pull-right col-lg-2">
+                                        <div class="checkbox i-checks">
+                                            <label for="open">是否立刻发布</label>
+                                            <label>
+                                                <input type="checkbox" id="open" name="isDone"
+                                                <?php if($info['isdone']){echo 'checked';}?> >
+                                                <i></i>发布</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+        </div>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/module.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/uploader.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_EDITOR_URL}scripts/simditor.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}plugins/chosen/chosen.jquery.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_URL}plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script>
+        $(function () {
+            $(".chosen-select").chosen();//初始化多选下拉框
+            $('#level').change(function () {
+                if ($('#level').val() == 'news_school') {
+                    $('#school').attr('required', 'required');
+                } else {
+                    $('#school').attr('required', '');
+                }
+            });
+            var editor = new Simditor({
+                textarea: $('#editor'),
+//        /defaultImage : '{$Think.const.ADMIN_EDITOR_URL}images/image.png', //编辑器插入图片时使用的默认图片
+                upload: {
+                    url: '{:U("upload/Imgupload")}', //文件上传的接口地址
+                    params: null, //键值对,指定文件上传接口的额外参数,上传的时候随文件一起提交
+                    fileKey: 'upload', //服务器端获取文件数据的参数名
+                    connectionCount: 3,
+                    leaveConfirm: '正在上传文件'
+                }
+            });
+            $('.datepicker').datepicker({
+                format: 'mm/dd/yyyy',
+                startDate: '-3d',
+                todayHighlight:true,
+            });
+
+        })
+    </script>

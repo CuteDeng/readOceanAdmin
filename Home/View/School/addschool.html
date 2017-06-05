@@ -1,0 +1,269 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css"/>
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/iCheck/custom.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/steps/jquery.steps.css" rel="stylesheet">
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/zeromodel/zeroModal.css" rel="stylesheet">
+
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-cogs text-navy mid-icon"></i>
+                </div>
+                <h2>学校基础数据设置</h2>
+                <span>设置学校、学校对应年级数量、班级数量</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+
+                <div class="ibox-content">
+                    <h2>
+                        学校基础设置
+                    </h2>
+                    <p>
+                        <!--下面这个示例展示了如何在表单向导中使用 jQuery Validation 插件-->
+                    </p>
+                    <form id="form" action="__ACTION__" class="wizard-big" method="post">
+
+                        <h1>学校基础设置</h1>
+                        <fieldset>
+                            <h2>学校基础设置</h2>
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        <label>学校所在城市 *</label>
+                                        <select class="form-control col-sm-6" id="level1" name="province" required>
+                                            <option value="">请选择</option>
+                                            <option value="44">广东</option>
+                                            <foreach name='type' item='v' key='k'>
+                                                <if condition="$v['provinceid'] neq '44'">
+                                                    <option value="{$v['provinceid']}"><?php echo $v['provincename']; ?></option>
+                                                </if>
+                                            </foreach>
+                                        </select>
+                                        <div id="zhanwei"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>学校名字 *</label>
+                                        <input id="SchoolName" name="SchoolName" type="text"
+                                               class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>学校年级数量(数量不能超过6) *</label>
+                                        <input id="gradeNum" name="gradeNum" type="number"
+                                               class="form-control" required>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                        <h1>学校年级设置</h1>
+                        <fieldset style="overflow-y: scroll">
+                            <h2>只需要填写相应年级即可,如无对应年级,请填'0'</h2>
+                            <div class="row">
+                                <div class="col-sm-6" id="grade1">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="1" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="一年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="col-sm-6" id="grade2">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="2" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="二年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6" id="grade3">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="3" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="三年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="col-sm-6" id="grade4">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="4" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="四年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6" id="grade5">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="5" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="五年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                                <div class="col-sm-6" id="grade6">
+                                    <div class="col-sm-2 form-group">
+                                        <label>年级</label>
+                                        <input class="form-control" name="grade[]" type="text" value="6" readonly>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>年级名称</label>
+                                        <input class="form-control" name="gradename[]" type="text" value="六年级"
+                                               required>
+                                    </div>
+                                    <div class="col-sm-2 form-group">
+                                        <label>班级数</label>
+                                        <input class="form-control" name="classNum[]" type="text" required>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <h1>确认警告</h1>
+                        <fieldset>
+                            <!--<h2>请确认是否无误</h2>-->
+                            <h3>学校信息一经提交将无法修改,请仔细确认之后再勾选确认。</h3>
+                            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required">
+                            <label for="acceptTerms">是</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="{$Think.const.ADMIN_JS_URL}plugins/staps/jquery.steps.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/validate/jquery.validate.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/zeromodel/zeroModal.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#form").steps({
+            bodyTag: "fieldset", onStepChanging: function (event, currentIndex, newIndex) {
+                if (currentIndex > newIndex) {
+                    return true
+                }
+                if (newIndex === 3) {
+                    return false
+                }
+                var form = $(this);
+                if (currentIndex < newIndex) {
+                    $(".body:eq(" + newIndex + ") label.error", form).remove();
+                    $(".body:eq(" + newIndex + ") .error", form).removeClass("error")
+                }
+                form.validate().settings.ignore = ":disabled,:hidden";
+                return form.valid()
+            }, onStepChanged: function (event, currentIndex, priorIndex) {
+                if (currentIndex === 2) {
+                    $(this).steps("next")
+                }
+                if (currentIndex === 2 && priorIndex === 3) {
+                    $(this).steps("previous")
+                }
+            }, onFinishing: function (event, currentIndex) {
+                var form = $(this);
+                form.validate().settings.ignore = ":disabled";
+                return form.valid()
+            }, onFinished: function (event, currentIndex) {
+                var form = $(this);
+                form.submit()
+            }
+        }).validate({
+            errorPlacement: function (error, element) {
+                element.before(error)
+            }, rules: {confirm: {equalTo: "#password"}}
+        })
+    });
+</script>
+<script>
+    $(function () {
+        $('#gradeNum').change(function () {
+            if ($('#gradeNum').val() > 6) {
+                alert('数量超限,请输入一个0到6之间的整数。');
+            }
+            else if ($('#gradeNum').val() <= 0) {
+                alert('数量违法,请输入一个0到6之间的整数。');
+            } else {
+                var num = $('#gradeNum').val();
+                for (var i = num - 0 + 1; i <= 6; i++) {
+                    $('#grade' + i).remove();
+                }
+            }
+
+        });
+    });
+    /* 二级联动 */
+    $(function () {
+        $('#level1').change(function () {
+            val = $(this).val();
+            $.ajax({
+                type: "GET",
+                url: '__CONTROLLER__/findCity',
+                data: {fid: val},
+                beforeSend: function () {
+                    zeroModal.loading(6);
+                },
+                success: function (data) {
+                    if (data['msg'] != false) {
+                        $('#zhanwei').next().remove();
+                        $('#zhanwei').after(data['str']);
+                    } else {
+                        $('#zhanwei').next().remove();
+                    }
+                    zeroModal.closeAll();
+                }
+            });
+        });
+    })
+</script>

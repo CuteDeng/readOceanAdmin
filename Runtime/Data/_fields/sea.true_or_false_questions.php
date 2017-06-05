@@ -1,0 +1,1 @@
+a:7:{i:0;s:2:"id";i:1;s:8:"question";i:2;s:6:"answer";i:3;s:6:"bookId";i:4;s:14:"difficultyType";s:3:"_pk";s:2:"id";s:5:"_type";a:5:{s:2:"id";s:11:"varchar(36)";s:8:"question";s:12:"varchar(255)";s:6:"answer";s:10:"varchar(2)";s:6:"bookId";s:11:"varchar(36)";s:14:"difficultyType";s:11:"varchar(30)";}}

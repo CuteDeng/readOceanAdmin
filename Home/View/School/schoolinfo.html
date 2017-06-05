@@ -1,0 +1,327 @@
+<link href="{$Think.const.ADMIN_CSS_URL}plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+            <div class="col-sm-11 p-xs">
+                <div class="pull-left m-r-md">
+                    <i class="fa fa-bar-chart-o text-navy mid-icon"></i>
+                </div>
+                <h2>{$info.schoolname} 设置管理</h2>
+                <span id="schoolid" style="display: none;">{$info.schoolid}</span>
+                <span>管理学校升级、学校毕业生管理、学校相关信息管理。</span>
+                <small>注意:只有在每年的7-9月份,且学校本年度未升级时,方能进行升级操作,其他时间段操作无效。</small>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <!--<span class="label label-primary pull-right data-year">2016-2017学年</span>-->
+                            <h5>学校用户数</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins" id="online">0</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <!--<span class="label label-primary pull-right data-year"></span>-->
+                            <h5>该校总数据量</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins" id="all">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-3 col-md-4">-->
+                <!--<div class="ibox float-e-margins">-->
+                <!--<div class="ibox-title">-->
+                <!--<if condition="$info.status eq '1'"><span class="label label-success pull-right">正常</span>-->
+                <!--<elseif condition="$info.status eq '2'"/>-->
+                <!--<span class="label label-danger pull-right">禁用</span>-->
+                <!--<elseif condition="$info.status eq '0'"/>-->
+                <!--<span class="label label-info pull-right">暂无缴费记录</span></if>-->
+                <!--<h5>学校状态管理</h5>-->
+                <!--</div>-->
+                <!--<div class="ibox-content">-->
+                <!--<if condition="$info.status eq '2'">-->
+                <!--<button class="btn btn-sm btn-danger">点击禁用</button>-->
+                <!--<else/>-->
+                <!--<button class="btn btn-sm btn-primary">点击激活</button>-->
+                <!--</if>-->
+
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>各年级人数分布情况</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="morris-bar-chart" style="max-height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>管理学校设置</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <td>是否禁用毕业生登录</td>
+                                    <td>
+                                        <if condition="$info.graduate eq '0'">
+                                            <span class="label label-primary" id="closeuser">未禁用毕业生,点击禁用</span>
+                                            <else/>
+                                            <span class="label label-danger" id="openuser">已禁用毕业生,点击激活</span>
+                                        </if>
+                                    </td>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>是否欠费</td>
+                                    <td>
+                                        <if condition="$info.outdate eq '1'"><span
+                                                class="label label-warning">已欠费</span>
+                                            <else/>
+                                            <span class="label label-success">未到期</span></if>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>学校状态</td>
+                                    <td>
+                                        <if condition="$info.status eq '1'"><span class="label label-success">正常</span>
+                                            <elseif condition="$info.status eq '2'"/>
+                                            <span class="label label-danger">禁用</span>
+                                            <elseif condition="$info.status eq '0'"/>
+                                            <span class="label label-info">暂无缴费记录</span></if>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>学校状态</td>
+                                    <td>
+                                        <if condition="$info.updatestatus eq '1'"><a class="text-navy"
+                                                                                     href="__CONTROLLER__/upgrade/school/{$info.schoolid}">升级</a>
+                                            <else/>
+                                            <span class="label label-default">已完成升学</span></if>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/morris/raphael-2.1.0.min.js"></script>
+<script src="{$Think.const.ADMIN_JS_URL}plugins/morris/morris.js"></script>
+<script>
+    $(document).ready(function () {
+        var schoolid = $('#schoolid').html();
+        if ($.cookie("school_" + schoolid + '_online') && $.cookie("school_" + schoolid + '_all') && $.cookie("school_" + schoolid + '_graduate')) {
+            var data = {
+                'online': $.cookie("school_" + schoolid + '_online'),
+                'all': $.cookie("school_" + schoolid + '_all'),
+                'graduate': $.cookie("school_" + schoolid + '_graduate'),
+            };
+            setdata(data);
+        } else {
+            $.ajax({
+                url: '__CONTROLLER__/schoolInformation',
+                type: 'post',
+                data: {'sid': schoolid},
+                success: function (data) {
+                    if (data.res == 1) {
+                        var month = new Date();
+                        month.setDate(1);
+                        month.setMonth(month.getMonth() + 1);
+                        month.setHours(0);
+                        month.setMinutes(0);
+                        $.cookie("school_" + schoolid + '_online', data['online'], {expires: month});
+                        $.cookie("school_" + schoolid + '_all', data['all'], {expires: month});
+                        $.cookie("school_" + schoolid + '_graduate', data['graduate'], {expires: month});
+                        var data2 = {
+                            'online': $.cookie("school_" + schoolid + '_online'),
+                            'all': $.cookie("school_" + schoolid + '_all'),
+                            'graduate': $.cookie("school_" + schoolid + '_graduate'),
+                        };
+                        setdata(data2);
+                    } else {
+                        alert('网络错误');
+                        console.log('获取学校信息失败');
+                    }
+                }
+            });
+        }
+        function setdata(data) {
+            $('#online').html(data['online']);
+            $('#all').html(data['all']);
+            $('#graduate').html(data['graduate']);
+        }
+
+        if ($.cookie("school_" + schoolid + '_number')) {
+            datas = JSON.parse($.cookie("school_" + schoolid + "_number"));
+            setchart(datas);
+        } else {
+            $.ajax({
+                url: '__CONTROLLER__/getSchoolMate',
+                type: 'post',
+                data: {'sid': schoolid},
+                success: function (data) {
+                    if (data.res == 1) {
+                        var month = new Date();
+                        month.setDate(1);
+                        month.setMonth(month.getMonth() + 1);
+                        month.setHours(0);
+                        month.setMinutes(0);
+                        //转回双引号
+                        var patten1 = /\'/g;
+                        data['data'] = data['data'].replace(patten1, "\"");
+
+                        $.cookie("school_" + schoolid + "_number", data['data'], {expires: month});
+                        datas = JSON.parse($.cookie("school_" + schoolid + "_number"));
+                        setchart(datas);
+                    } else if (data.res == 2) {
+                        alert(data.msg);
+                    }
+                    else {
+                        alert('网络错误');
+                        console.log('获取学校信息失败');
+                    }
+                },
+            });
+        }
+        function setchart(data) {
+            new Morris.Bar({
+                element: "morris-bar-chart",
+                data: data,
+                xkey: "gradename",
+                ykeys: ["number"],
+                labels: ['年级人数'],
+                units: '人',
+                resize: !0,
+                barColors: ["#1ab394"]
+            });
+        }
+
+        $('#closeuser').click(function () {
+
+            $.ajax({
+                url: '__CONTROLLER__/closegraduate',
+                type: 'post',
+                data: {"sid": schoolid},
+                success: function (data) {
+                    console.log(data);
+                    if (data.res == 1) {
+                        var node = $('<span class="label label-danger" id="openuser">已禁用毕业生,点击激活</span>');
+                        $('#closeuser').after(node);
+                        $('#openuser').parent().delegate("#closeuser", 'click', function () {
+                            $.ajax({
+                                url: '__CONTROLLER__/closegraduate',
+                                type: 'post',
+                                data: {"sid": schoolid},
+                                success: function (data) {
+                                    if (data.res == 1) {
+                                        var node = $('<span class="label label-danger" id="openuser">已禁用毕业生,点击激活</span>');
+                                        $('#closeuser').after(node);
+                                        $('#closeuser').remove();
+                                    } else {
+                                        alert(data.msg);
+                                    }
+                                }
+                            })
+                        });
+                        $('#closeuser').remove();
+                    } else {
+                        alert(data.msg);
+                    }
+                }
+            })
+        });
+        $('#closeuser').parent().delegate("#openuser", 'click', function () {
+            $.ajax({
+                url: '__CONTROLLER__/opengraduate',
+                type: 'post',
+                data: {"sid": schoolid},
+                success: function (data) {
+                    if (data.res == 1) {
+                        var node = $('<span class="label label-primary" id="closeuser">已启用毕业生,点击禁用</span>');
+                        $('#openuser').after(node);
+                        $('#openuser').remove();
+                    } else {
+                        alert(data.msg);
+                    }
+                }
+            })
+        });
+        $('#openuser').click(function () {
+            $.ajax({
+                url: '__CONTROLLER__/opengraduate',
+                type: 'post',
+                data: {"sid": schoolid},
+                success: function (data) {
+
+                    if (data.res == 1) {
+                        var node = $('<span class="label label-primary" id="closeuser">已启用毕业生,点击禁用</span>');
+                        $('#openuser').after(node);
+                        $('#closeuser').parent().delegate("#openuser", 'click', function () {
+                            $.ajax({
+                                url: '__CONTROLLER__/opengraduate',
+                                type: 'post',
+                                data: {"sid": schoolid},
+                                success: function (data) {
+                                    if (data.res == 1) {
+                                        var node = $('<span class="label label-primary" id="closeuser">已启用毕业生,点击禁用</span>');
+                                        $('#openuser').after(node);
+                                        $('#openuser').remove();
+                                    } else {
+                                        alert(data.msg);
+                                    }
+                                }
+                            })
+                        });
+                        $('#openuser').remove();
+                    } else {
+                        alert("网络错误");
+                    }
+                }
+            })
+        });
+        $('#openuser').parent().delegate("#closeuser", 'click', function () {
+            $.ajax({
+                url: '__CONTROLLER__/closegraduate',
+                type: 'post',
+                data: {"sid": schoolid},
+                success: function (data) {
+                    if (data.res == 1) {
+                        var node = $('<span class="label label-danger" id="openuser">已禁用毕业生,点击激活</span>');
+                        $('#closeuser').after(node);
+                        $('#closeuser').remove();
+                    } else {
+                        alert(data.msg);
+                    }
+                }
+            })
+        })
+    });
+</script>

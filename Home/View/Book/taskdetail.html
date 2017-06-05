@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}newstyle.css">
+<style>
+    .hiden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+<!--<?php dump($studentlist);?>-->
+<div class="wrapper wrapper-content animated fadeInDown">
+
+    <div class="ibox-content m-b-sm border-bottom">
+        <div class="row p-xs">
+            <div class="pull-left m-r-md" style="margin: 10px 0 0 10px">
+                <i class="fa fa-bookmark-o text-navy mid-icon"></i>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-xs-6">
+                <h2>任务标题:{$info.tasktitle}</h2>
+                <span>发布老师 : {$info.name} 老师</span><br>
+                <span>涉及图书 : {$info.bookname}</span><br>
+                <span>任务描述 : {$info.taskdescribe}</span><br>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 sm-hidden pull-right">
+                <br>
+                <br>
+                <span>发布时间 : <?php echo subtextnodot(0,$info['publishdate'],16);?></span><br>
+                <span>开始时间 : <?php echo subtextnodot(0,$info['startdate'],16);?></span><br>
+                <span>结束时间 : <?php echo subtextnodot(0,$info['enddate'],16);?></span>
+            </div>
+        </div>
+    </div>
+    <!--<?php dump($studentlist);?>-->
+    <div class="ibox-content forum-container">
+        <div id="teacherlist">
+            <div class="forum-title">
+                <div class="pull-right forum-desc">
+                    <!--<samll>总任务数：</samll>-->
+                </div>
+                <h3>学生完成情况</h3>
+            </div>
+            <empty name="studentlist">
+                <div class="forum-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="forum-icon">
+                                <i class="fa fa-bolt"></i>该老师没有安排学生完成任务哦。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <else/>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>学生名</th>
+                        <th>完成情况</th>
+                        <th>完成时间</th>
+                        <th>评价时间</th>
+                        <th>评价情况</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="studentlist" item="vo">
+                        <tr>
+                            <td>{$key+1+($_GET['p']-1)*30}</td>
+                            <td><?php echo getStuClass($vo['classid']);?> - {$vo.name}</td>
+                            <td><?php echo empty($vo['isdone'])?'未完成':'已完成';?></td>
+                            <td><?php echo subtextnodot(0,$vo['time'],16);?></td>
+                            <td>{$vo.assess}</td>
+                            <td><?php echo subtextnodot(0,$vo['assesstime'],16);?></td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+                <div class="page-container">
+                    <div class="page">{$page}</div>
+                    <div class="clear"></div>
+                </div>
+            </empty>
+        </div>
+
+    </div>
+</div>

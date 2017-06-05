@@ -1,0 +1,68 @@
+<style>
+    .page {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page a {
+        float: right;
+        display: block;
+        overflow: hidden;
+        margin: 0 0 5px 5px;
+        padding: 3px 8px;
+        border: 1px solid #CCC;
+        color: #101010;
+    }
+
+    .page a:hover {
+        background-color: #333;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .page a.current {
+        background-color: #333;
+        color: #FFF;
+    }
+</style>
+<div id="page-wrapper">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div>
+            <h2 style="float:left;">角色管理</h2>
+            <a style="float:right; margin-top: 20px;" href="__CONTROLLER__/roleAdd" class="btn btn-primary">添加</a>
+        </div>
+        <div style="clear:both;"></div>
+        <hr/>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped tablesorter">
+                <thead>
+                <tr>
+                    <th>序号<i class="fa"></i></th>
+                    <th>角色名称<i class="fa"></i></th>
+                    <th>修改时间<i class="fa"></i></th>
+                    <th>修改<i class="fa"></i></th>
+                    <th>删除<i class="fa"></i></th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name="list" item="v1" key="k1">
+                    <tr>
+                        <td>{$k1}</td>
+                        <td>{$v1['rolename']}</td>
+                        <td>{$v1['updatetime']|date='Y-m-d H:i:s',###}</td>
+                        <td style="width:100px;"><a href="__CONTROLLER__/roleEdit/id/{$v1['id']}" class="btn btn-link">编辑</a>
+                        </td>
+                        <td style="width:100px;"><a href="__CONTROLLER__/roleDel/id/{$v1['id']}"
+                                                    onclick="if(confirm('你确定要删除吗?')==false){return false;}"
+                                                    class="btn btn-link">删除</a></td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <div class="result page">{$page}</div>
+        </div>
+    </div>
+</div><!-- /.row -->
+</div>
+</div>
